@@ -35,7 +35,6 @@ average_renda = df['renda_media_domicilio_sm'].mean()
 
 # Set up the Streamlit interface
 st.title("Impacto das Enchentes no Ensino Infantil de Porto Alegre")
-st.subheader(f"Média de renda domiciliar: {average_renda:.2f} salários mínimos")
 
 # Create the scatter mapbox figure
 fig_map = px.scatter_mapbox(
