@@ -70,18 +70,60 @@ fig_map.update_layout(
 # Adjust the layout to make the map wider
 st.plotly_chart(fig_map, use_container_width=True)
 
-# Create the bar chart for top schools by 'VALOR ESTIMADO'
-top_schools = df.nlargest(10, 'VALOR ESTIMADO')
-fig_top_schools = px.bar(
-    top_schools,
+# Sort the dataframe by 'VALOR ESTIMADO'
+df_sorted = df.sort_values(by='VALOR ESTIMADO', ascending=True)
+
+# Create the bar chart ranking all schools by 'VALOR ESTIMADO'
+fig_all_schools = px.bar(
+    df_sorted,
     x='NOME',
     y='VALOR ESTIMADO',
-    title='Top 10 Escolas por Valor Estimado de Prejuízo',
+    title='Escolas por Valor Estimado de Prejuízo',
     labels={'VALOR ESTIMADO': 'Valor Estimado de Prejuízo (R$)', 'NOME': 'Nome da Escola'},
     color='VALOR ESTIMADO',
     color_continuous_scale=px.colors.sequential.Sunset
 )
-fig_top_schools.update_layout(title_x=0.5)
+fig_all_schools.update_layout(
+    title_x=0.5,
+    xaxis_tickangle=-45,  # Rotate the x-axis labels
+    xaxis_title=None,  # Remove x-axis title for better clarity
+    yaxis_title=None,  # Remove y-axis title for better clarity
+    margin=dict(l=20, r=20, t=30, b=200),  # Adjust margins to accommodate rotated labels
+    height=700,  # Increase the height of the figure
+    font=dict(size=10)  # Reduce the font size
+)
+fig_all_schools.update_traces(
+    hovertemplate="<b>%{x}</b><br>Valor Estimado de Prejuízo: R$%{y}<extra></extra>"
+)
+
+# Create the new column for 'Prejuízo estimado por aluno'
+df['PREJUIZO_POR_ALUNO'] = (df['VALOR ESTIMADO'] / df['NUM ALUNOS']).astype(int)
+
+# Sort the dataframe by 'PREJUIZO_POR_ALUNO'
+df_sorted_by_prejuizo_por_aluno = df.sort_values(by='PREJUIZO_POR_ALUNO', ascending=True)
+
+# Create the new bar chart for 'Prejuízo estimado por aluno'
+fig_prejuizo_por_aluno = px.bar(
+    df_sorted_by_prejuizo_por_aluno,
+    x='NOME',
+    y='PREJUIZO_POR_ALUNO',
+    title='Prejuízo Estimado por Aluno em Cada Escola',
+    labels={'PREJUIZO_POR_ALUNO': 'Prejuízo Estimado por Aluno (R$)', 'NOME': 'Nome da Escola'},
+    color='PREJUIZO_POR_ALUNO',
+    color_continuous_scale=px.colors.sequential.Plasma
+)
+fig_prejuizo_por_aluno.update_layout(
+    title_x=0.5,
+    xaxis_tickangle=-45,  # Rotate the x-axis labels
+    xaxis_title=None,  # Remove x-axis title for better clarity
+    yaxis_title=None,  # Remove y-axis title for better clarity
+    margin=dict(l=20, r=20, t=30, b=200),  # Adjust margins to accommodate rotated labels
+    height=700,  # Increase the height of the figure
+    font=dict(size=10)  # Reduce the font size
+)
+fig_prejuizo_por_aluno.update_traces(
+    hovertemplate="<b>%{x}</b><br>Prejuízo Estimado por Aluno: R$%{y}<extra></extra>"
+)
 
 # Create the pie chart for student distribution by neighborhood
 students_distribution = df.groupby('Bairro')['NUM ALUNOS'].sum().reset_index()
@@ -107,7 +149,8 @@ fig_average_renda = px.bar(
 )
 fig_average_renda.update_layout(title_x=0.5)
 
-# Display the other plots below the map
-st.plotly_chart(fig_top_schools, use_container_width=True)
+# Display the plots below the map
+st.plotly_chart(fig_all_schools, use_container_width=True)
+st.plotly_chart(fig_prejuizo_por_aluno, use_container_width=True)
 st.plotly_chart(fig_students_distribution, use_container_width=True)
 st.plotly_chart(fig_average_renda, use_container_width=True)
