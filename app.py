@@ -4,6 +4,8 @@ import json
 import plotly.express as px
 import streamlit as st
 
+st.set_page_config(layout='wide')
+
 # Load the dataset
 df = pd.read_csv('./final_dataset.csv')
 
