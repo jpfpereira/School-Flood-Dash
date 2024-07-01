@@ -88,7 +88,7 @@ fig_grouped_bar = px.bar(
     y='Valor',
     color='Tipo',
     barmode='group',
-    title='Escolas por Valor Estimado de Prejuízo e Valor Investido',
+    title='Valor Estimado de Prejuízo e Valor Investido por Escola',
     labels={'Valor': 'Valor (R$)', 'Nome': 'Nome da Escola'},
     color_discrete_map={"Valor Estimado": px.colors.sequential.Sunset[5], "Valor Investido": px.colors.sequential.Plasma[5]}
 )
