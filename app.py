@@ -1,58 +1,40 @@
 import pandas as pd
-import geopandas as gpd
 import json
 import plotly.express as px
 import streamlit as st
 
 st.set_page_config(layout='wide')
 
-# Load the datasets
 df = pd.read_csv('data/schools_geo_info.csv')
 base_geral_df = pd.read_csv('data/base_geral_pagamentos.csv')
 
-print(base_geral_df.head(5))
-
 base_geral_df['ESCOLA'] = base_geral_df['ESCOLA'].str.upper()
-# Clean and convert the VALOR column in base_geral_df
-print(f'OLD VALORES {list(base_geral_df["VALOR"])}')
+base_geral_df['VALOR'] = pd.to_numeric(
+    base_geral_df['VALOR']
+    .str.replace(r'R\$', '', regex=True)
+    .str.replace(' ', '', regex=False)
+    .str.replace('-', '', regex=False)
+    .str.replace('.', '', regex=False)
+    .str.replace(',', '.', regex=False),
+    errors='coerce'
+)
 
-# Remove the 'R$' symbol and any spaces
-base_geral_df['VALOR'] = base_geral_df['VALOR'].replace({'R\$': '', ' ': '', '-': ''}, regex=True)
-
-# Remove dots used as thousand separators, replace the comma with a dot for decimal conversion
-base_geral_df['VALOR'] = base_geral_df['VALOR'].str.replace('.', '', regex=False)
-base_geral_df['VALOR'] = base_geral_df['VALOR'].str.replace(',', '.', regex=False)
-
-# Convert to float, while preserving the negative sign
-base_geral_df['VALOR'] = pd.to_numeric(base_geral_df['VALOR'], errors='coerce')
-
-# Calculate the current balance
 current_balance = base_geral_df[base_geral_df['CONTABILIDADE'] == 'Entrada']['VALOR'].sum() - \
                   base_geral_df[base_geral_df['CONTABILIDADE'] == 'Saída']['VALOR'].sum()
 
-# Calculate total investments done for schools
 total_investments = base_geral_df[base_geral_df['CONTABILIDADE'] == 'Saída']['VALOR'].sum()
 
-# Aggregate investments by school
 school_investments = base_geral_df[base_geral_df['CONTABILIDADE'] == 'Saída'].groupby('ESCOLA')['VALOR'].sum().reset_index()
 school_investments.columns = ['Nome', 'Valor Investido']
 
-# Merge the aggregated school investments data with the main dataset
 df = pd.merge(df, school_investments, on='Nome', how='left')
-
-# Treat NaN values in 'Valor Investido' as 0
 df['Valor Investido'].fillna(0, inplace=True)
-
-# Calculate the ratio of Valor Investido to Valor Estimado and convert to percentage
 df['Investimento Percentual'] = (df['Valor Investido'] / df['Valor Estimado']) * 100
 
-# Display the balance and total investments on the dashboard
 st.title("Reconstrução do Ensino Infantil Impactado pela Enchente")
-
 st.subheader(f"Saldo Atual: R$ {current_balance:,.2f}")
 st.subheader(f"Investimentos Totais nas Escolas: R$ {total_investments:,.2f}")
 
-# Create the scatter mapbox figure
 fig_map = px.scatter_mapbox(
     df,
     lat="Latitude",
@@ -74,11 +56,8 @@ fig_map = px.scatter_mapbox(
     mapbox_style="carto-positron",
     title="Valor Investido por Escola"
 )
-
-# Rename color bar
 fig_map.update_coloraxes(colorbar_title="Investimento Percentual")
 
-# Add the neighborhood boundaries to the figure
 with open('./bairros.geojson') as f:
     neighbourhoods = json.load(f)
 
@@ -95,17 +74,11 @@ fig_map.update_layout(
     title_x=0.5
 )
 
-# Adjust the layout to make the map wider
 st.plotly_chart(fig_map, use_container_width=True)
 
-# Sort the dataframe by 'Valor Estimado'
-df_sorted_by_valor_estimado = df.sort_values(by='Valor Estimado', ascending=True)
-
-# Create the new DataFrame for the grouped bar chart
-df_melted = df_sorted_by_valor_estimado.melt(id_vars=["Nome"], value_vars=["Valor Estimado", "Valor Investido"], 
+df_melted = df.sort_values(by='Valor Estimado').melt(id_vars=["Nome"], value_vars=["Valor Estimado", "Valor Investido"], 
                     var_name="Tipo", value_name="Valor")
 
-# Create the grouped bar chart
 fig_grouped_bar = px.bar(
     df_melted,
     x='Nome',
@@ -118,23 +91,19 @@ fig_grouped_bar = px.bar(
 )
 fig_grouped_bar.update_layout(
     title_x=0.5,
-    xaxis_tickangle=-45,  # Rotate the x-axis labels
-    xaxis_title=None,  # Remove x-axis title for better clarity
-    yaxis_title=None,  # Remove y-axis title for better clarity
-    margin=dict(l=20, r=20, t=30, b=200),  # Adjust margins to accommodate rotated labels
-    height=700,  # Increase the height of the figure
-    font=dict(size=10)  # Reduce the font size
+    xaxis_tickangle=-45,
+    xaxis_title=None,
+    yaxis_title=None,
+    margin=dict(l=20, r=20, t=30, b=200),
+    height=700,
+    font=dict(size=10)
 )
 fig_grouped_bar.update_traces(
     hovertemplate="<b>%{x}</b><br>%{fullData.name}: R$%{y}<extra></extra>"
 )
 
-# Sort the dataframe by 'Valor Investido'
-df_sorted_by_valor_investido = df.sort_values(by='Valor Investido', ascending=True)
-
-# Create the bar chart for absolute 'Valor Investido'
 fig_valor_investido = px.bar(
-    df_sorted_by_valor_investido,
+    df.sort_values(by='Valor Investido'),
     x='Nome',
     y='Valor Investido',
     title='Valor Investido por Escola',
@@ -144,23 +113,19 @@ fig_valor_investido = px.bar(
 )
 fig_valor_investido.update_layout(
     title_x=0.5,
-    xaxis_tickangle=-45,  # Rotate the x-axis labels
-    xaxis_title=None,  # Remove x-axis title for better clarity
-    yaxis_title=None,  # Remove y-axis title for better clarity
-    margin=dict(l=20, r=20, t=30, b=200),  # Adjust margins to accommodate rotated labels
-    height=700,  # Increase the height of the figure
-    font=dict(size=10)  # Reduce the font size
+    xaxis_tickangle=-45,
+    xaxis_title=None,
+    yaxis_title=None,
+    margin=dict(l=20, r=20, t=30, b=200),
+    height=700,
+    font=dict(size=10)
 )
 fig_valor_investido.update_traces(
     hovertemplate="<b>%{x}</b><br>Valor Investido: R$%{y}<extra></extra>"
 )
 
-# Sort the dataframe by 'Investimento Percentual'
-df_sorted_by_investimento = df.sort_values(by='Investimento Percentual', ascending=True)
-
-# Create the new bar chart for 'Investimento Percentual'
 fig_investimento_percentual = px.bar(
-    df_sorted_by_investimento,
+    df.sort_values(by='Investimento Percentual'),
     x='Nome',
     y='Investimento Percentual',
     title='Investimento Percentual por Escola',
@@ -170,18 +135,17 @@ fig_investimento_percentual = px.bar(
 )
 fig_investimento_percentual.update_layout(
     title_x=0.5,
-    xaxis_tickangle=-45,  # Rotate the x-axis labels
-    xaxis_title=None,  # Remove x-axis title for better clarity
-    yaxis_title=None,  # Remove y-axis title for better clarity
-    margin=dict(l=20, r=20, t=30, b=200),  # Adjust margins to accommodate rotated labels
-    height=700,  # Increase the height of the figure
-    font=dict(size=10)  # Reduce the font size
+    xaxis_tickangle=-45,
+    xaxis_title=None,
+    yaxis_title=None,
+    margin=dict(l=20, r=20, t=30, b=200),
+    height=700,
+    font=dict(size=10)
 )
 fig_investimento_percentual.update_traces(
     hovertemplate="<b>%{x}</b><br>Investimento Percentual: %{y:.2f}%<extra></extra>"
 )
 
-# Create the pie chart for investment distribution by neighborhood
 investment_distribution = df.groupby('Bairro')['Valor Investido'].sum().reset_index()
 fig_investment_distribution = px.pie(
     investment_distribution,
@@ -192,27 +156,16 @@ fig_investment_distribution = px.pie(
 )
 fig_investment_distribution.update_layout(title_x=0.5)
 
-# Display the plots below the map
 st.plotly_chart(fig_grouped_bar, use_container_width=True)
 st.plotly_chart(fig_valor_investido, use_container_width=True)
 st.plotly_chart(fig_investimento_percentual, use_container_width=True)
 st.plotly_chart(fig_investment_distribution, use_container_width=True)
 
-# Parse and extract the month names from the 'MÊS' column, safely handling NaNs
-base_geral_df['MÊS'] = base_geral_df['MÊS'].apply(lambda x: x.split('.')[1] if pd.notnull(x) else x)
-
-# Convert 'Mês' column to a categorical type with a specific order
+base_geral_df['MÊS'] = base_geral_df['MÊS'].apply(lambda x: x.split('. ')[1] if pd.notnull(x) else x)
 month_order = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
 base_geral_df['MÊS'] = pd.Categorical(base_geral_df['MÊS'], categories=month_order, ordered=True)
-base_geral_df['ESCOLA'] = base_geral_df['ESCOLA'].str.upper()
+recent_investments = base_geral_df[base_geral_df['CONTABILIDADE'] == 'Saída']
+recent_investments = recent_investments.sort_values(by='MÊS', ascending=False).reset_index(drop=True)
 
-# Sort the dataframe by 'Mês'
-recent_investments = base_geral_df.sort_values(by='MÊS', ascending=False)
-
-# Drop unnecessary columns for displaying recent investments
-columns_to_drop = ['ID', 'ANO', 'ITEM', 'CATEGORIA', 'DATA_VENCIMENTO', 'DATA_PAGAMENTO', 'TIPO_DE_PAGAMENTO']
-recent_investments = recent_investments.drop(columns=columns_to_drop)
-
-# Display the most recent investments as a table
 st.header("Investimentos Recentes")
-st.table(recent_investments[['MÊS', 'ESCOLA', 'VALOR', 'CONTABILIDADE']].head(50))
+st.table(recent_investments[['MÊS', 'ESCOLA', 'ITEM', 'CATEGORIA', 'PRESTADOR', 'VALOR']].head(50))
