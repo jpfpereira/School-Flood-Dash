@@ -8,28 +8,49 @@ st.set_page_config(layout='wide')
 
 # Load the datasets
 df = pd.read_csv('data/schools_geo_info.csv')
-cashflow_df = pd.read_csv('data/aggregated_cashflow.csv')
-recent_investments = pd.read_csv('data/cashflow.csv')
+base_geral_df = pd.read_csv('data/base_geral_pagamentos.csv')
 
-# Load the GeoJSON file
-with open('./bairros.geojson') as f:
-    neighbourhoods = json.load(f)
+print(base_geral_df.head(5))
 
-# Merge the aggregated cashflow data with the main dataset
-df = pd.merge(df, cashflow_df, left_on='Nome', right_on='Escola', how='left')
-df.rename(columns={'Valor': 'Valor Investido'}, inplace=True)
+base_geral_df['ESCOLA'] = base_geral_df['ESCOLA'].str.upper()
+# Clean and convert the VALOR column in base_geral_df
+print(f'OLD VALORES {list(base_geral_df["VALOR"])}')
+
+# Remove the 'R$' symbol and any spaces
+base_geral_df['VALOR'] = base_geral_df['VALOR'].replace({'R\$': '', ' ': '', '-': ''}, regex=True)
+
+# Remove dots used as thousand separators, replace the comma with a dot for decimal conversion
+base_geral_df['VALOR'] = base_geral_df['VALOR'].str.replace('.', '', regex=False)
+base_geral_df['VALOR'] = base_geral_df['VALOR'].str.replace(',', '.', regex=False)
+
+# Convert to float, while preserving the negative sign
+base_geral_df['VALOR'] = pd.to_numeric(base_geral_df['VALOR'], errors='coerce')
+
+# Calculate the current balance
+current_balance = base_geral_df[base_geral_df['CONTABILIDADE'] == 'Entrada']['VALOR'].sum() - \
+                  base_geral_df[base_geral_df['CONTABILIDADE'] == 'Saída']['VALOR'].sum()
+
+# Calculate total investments done for schools
+total_investments = base_geral_df[base_geral_df['CONTABILIDADE'] == 'Saída']['VALOR'].sum()
+
+# Aggregate investments by school
+school_investments = base_geral_df[base_geral_df['CONTABILIDADE'] == 'Saída'].groupby('ESCOLA')['VALOR'].sum().reset_index()
+school_investments.columns = ['Nome', 'Valor Investido']
+
+# Merge the aggregated school investments data with the main dataset
+df = pd.merge(df, school_investments, on='Nome', how='left')
 
 # Treat NaN values in 'Valor Investido' as 0
 df['Valor Investido'].fillna(0, inplace=True)
 
-# Calculate additional metrics
-average_renda = df['Renda_Media_Domicilio_Sm'].mean()
-
 # Calculate the ratio of Valor Investido to Valor Estimado and convert to percentage
 df['Investimento Percentual'] = (df['Valor Investido'] / df['Valor Estimado']) * 100
 
-# Set up the Streamlit interface
+# Display the balance and total investments on the dashboard
 st.title("Reconstrução do Ensino Infantil Impactado pela Enchente")
+
+st.subheader(f"Saldo Atual: R$ {current_balance:,.2f}")
+st.subheader(f"Investimentos Totais nas Escolas: R$ {total_investments:,.2f}")
 
 # Create the scatter mapbox figure
 fig_map = px.scatter_mapbox(
@@ -58,6 +79,9 @@ fig_map = px.scatter_mapbox(
 fig_map.update_coloraxes(colorbar_title="Investimento Percentual")
 
 # Add the neighborhood boundaries to the figure
+with open('./bairros.geojson') as f:
+    neighbourhoods = json.load(f)
+
 fig_map.update_layout(
     mapbox={
         "layers": [{
@@ -174,20 +198,21 @@ st.plotly_chart(fig_valor_investido, use_container_width=True)
 st.plotly_chart(fig_investimento_percentual, use_container_width=True)
 st.plotly_chart(fig_investment_distribution, use_container_width=True)
 
-# Transform 'Mês' column
-recent_investments['Mês'] = recent_investments['Mês'].apply(lambda x: x.split('.')[1])
+# Parse and extract the month names from the 'MÊS' column, safely handling NaNs
+base_geral_df['MÊS'] = base_geral_df['MÊS'].apply(lambda x: x.split('.')[1] if pd.notnull(x) else x)
 
 # Convert 'Mês' column to a categorical type with a specific order
 month_order = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
-recent_investments['Mês'] = pd.Categorical(recent_investments['Mês'], categories=month_order, ordered=True)
+base_geral_df['MÊS'] = pd.Categorical(base_geral_df['MÊS'], categories=month_order, ordered=True)
+base_geral_df['ESCOLA'] = base_geral_df['ESCOLA'].str.upper()
 
 # Sort the dataframe by 'Mês'
-recent_investments = recent_investments.sort_values(by='Mês', ascending=False)
+recent_investments = base_geral_df.sort_values(by='MÊS', ascending=False)
 
-# Drop unnecessary columns
-columns_to_drop = ['ID', 'Ano', 'Item', 'Categoria', 'Data de Vencimento', 'Data de Pagamento', 'Método de Pagameto']
+# Drop unnecessary columns for displaying recent investments
+columns_to_drop = ['ID', 'ANO', 'ITEM', 'CATEGORIA', 'DATA_VENCIMENTO', 'DATA_PAGAMENTO', 'TIPO_DE_PAGAMENTO']
 recent_investments = recent_investments.drop(columns=columns_to_drop)
 
 # Display the most recent investments as a table
 st.header("Investimentos Recentes")
-st.table(recent_investments.head(50))
+st.table(recent_investments[['MÊS', 'ESCOLA', 'VALOR', 'CONTABILIDADE']].head(50))
