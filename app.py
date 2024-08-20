@@ -5,20 +5,12 @@ import streamlit as st
 st.set_page_config(layout='wide')
 
 # Load data
-base_geral_df = pd.read_csv('data/base-geral-pagamentos.csv')
+base_geral_df = pd.read_csv('data/Base_Geral_Pagamentos.csv')
 
 # Data cleaning and processing
 base_geral_df['ESCOLA'] = base_geral_df['ESCOLA'].str.strip().str.upper()
-base_geral_df['VALOR'] = pd.to_numeric(
-    base_geral_df['VALOR']
-    .str.replace(r'R\$', '', regex=True)
-    .str.replace(' ', '', regex=False)
-    .str.replace('-', '', regex=False)
-    .str.replace('.', '', regex=False)
-    .str.replace(',', '.', regex=False),
-    errors='coerce'
-)
 
+base_geral_df['VALOR'] = base_geral_df['VALOR'].abs()
 # Handle date format variations in 'DATA_VENCIMENTO'
 base_geral_df['DATA_VENCIMENTO'] = pd.to_datetime(base_geral_df['DATA_VENCIMENTO'], dayfirst=True, errors='coerce')
 
