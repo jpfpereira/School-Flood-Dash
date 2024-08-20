@@ -6,7 +6,7 @@ st.set_page_config(layout='wide')
 
 # Load data
 df = pd.read_csv('data/schools_geo_info.csv')
-base_geral_df = pd.read_csv('data/base_geral_pagamentos.csv')
+base_geral_df = pd.read_csv('data/base-geral-pagamentos.csv')
 
 # Data cleaning and processing
 base_geral_df['ESCOLA'] = base_geral_df['ESCOLA'].str.strip().str.upper()
@@ -23,14 +23,15 @@ base_geral_df['VALOR'] = pd.to_numeric(
 # Handle date format variations in 'DATA_VENCIMENTO'
 base_geral_df['DATA_VENCIMENTO'] = pd.to_datetime(base_geral_df['DATA_VENCIMENTO'], dayfirst=True, errors='coerce')
 
-# Calculate current balance and total investments
-current_balance = base_geral_df[base_geral_df['Tipo'] == 'Entrada']['VALOR'].sum() - \
-                  base_geral_df[base_geral_df['Tipo'] == 'Saída']['VALOR'].sum()
+# Calculate current balance and total investments (only for 'Pago' status)
+paid_transactions = base_geral_df[base_geral_df['STATUS'] == 'Pago']
+current_balance = paid_transactions[paid_transactions['Tipo'] == 'Entrada']['VALOR'].sum() - \
+                  paid_transactions[paid_transactions['Tipo'] == 'Saída']['VALOR'].sum()
 
-total_investments = base_geral_df[base_geral_df['Tipo'] == 'Saída']['VALOR'].sum()
+total_investments = paid_transactions[paid_transactions['Tipo'] == 'Saída']['VALOR'].sum()
 
-# Calculate investments per school
-school_investments = base_geral_df[base_geral_df['Tipo'] == 'Saída'].groupby('ESCOLA')['VALOR'].sum().reset_index()
+# Calculate investments per school (only for 'Pago' status)
+school_investments = paid_transactions[paid_transactions['Tipo'] == 'Saída'].groupby('ESCOLA')['VALOR'].sum().reset_index()
 school_investments.columns = ['Nome', 'Valor Investido']
 
 # Merge data
@@ -67,8 +68,8 @@ fig_valor_investido.update_traces(
 
 st.plotly_chart(fig_valor_investido, use_container_width=True)
 
-# Calculate the Balanço (balance) for each date
-balanco_df = base_geral_df[['DATA_VENCIMENTO', 'VALOR', 'Tipo']]
+# Calculate the Balanço (balance) for each date (only for 'Pago' status)
+balanco_df = paid_transactions[['DATA_VENCIMENTO', 'VALOR', 'Tipo']]
 
 balanco_df['VALOR'] = balanco_df.apply(
     lambda x: x['VALOR'] if x['Tipo'] == 'Entrada' else -x['VALOR'],
@@ -77,9 +78,6 @@ balanco_df['VALOR'] = balanco_df.apply(
 
 # Group by 'DATA_VENCIMENTO' and sum the 'VALOR'
 aggregated_balanco_df = balanco_df.groupby('DATA_VENCIMENTO')['VALOR'].sum().reset_index()
-
-# Convert 'DATA_VENCIMENTO' to datetime format, handle different formats
-aggregated_balanco_df['DATA_VENCIMENTO'] = pd.to_datetime(aggregated_balanco_df['DATA_VENCIMENTO'], dayfirst=True, errors='coerce')
 
 # Sort the dataframe by 'DATA_VENCIMENTO'
 aggregated_balanco_df = aggregated_balanco_df.sort_values(by='DATA_VENCIMENTO')
@@ -110,12 +108,13 @@ fig_balanco.update_traces(
 
 st.plotly_chart(fig_balanco, use_container_width=True)
 
-# Process months for recent investments
-base_geral_df['MÊS'] = base_geral_df['MÊS'].apply(lambda x: x.split('. ')[1] if pd.notnull(x) else x)
-month_order = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
-base_geral_df['MÊS'] = pd.Categorical(base_geral_df['MÊS'], categories=month_order, ordered=True)
-recent_investments = base_geral_df[base_geral_df['Tipo'] == 'Saída']
-recent_investments = recent_investments.sort_values(by='MÊS', ascending=False).reset_index(drop=True)
+# Process months for recent investments (only for 'Pago' status)
+month_order = ['Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
+paid_transactions['MÊS'] = paid_transactions['MÊS'].apply(lambda x: x.split('. ')[1] if pd.notnull(x) else x)
+paid_transactions['MÊS'] = pd.Categorical(paid_transactions['MÊS'], categories=month_order, ordered=True)
+
+# Sort investments from oldest to most recent
+recent_investments = paid_transactions[paid_transactions['Tipo'] == 'Saída'].sort_values(by=['DATA_VENCIMENTO', 'MÊS'])
 
 def paginate_dataframe(df, page_size, page_num):
     start_index = page_num * page_size
