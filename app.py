@@ -5,7 +5,6 @@ import streamlit as st
 st.set_page_config(layout='wide')
 
 # Load data
-df = pd.read_csv('data/schools_geo_info.csv')
 base_geral_df = pd.read_csv('data/base-geral-pagamentos.csv')
 
 # Data cleaning and processing
@@ -30,16 +29,15 @@ current_balance = paid_transactions[paid_transactions['Tipo'] == 'Entrada']['VAL
 
 total_investments = paid_transactions[paid_transactions['Tipo'] == 'Saída']['VALOR'].sum()
 
-# Calculate investments per school (for both 'Pago' and 'Forecast')
+# Calculate investments per school
 school_investments_paid = base_geral_df[(base_geral_df['Tipo'] == 'Saída') & (base_geral_df['STATUS'] == 'Pago')].groupby('ESCOLA')['VALOR'].sum().reset_index()
 school_investments_paid.columns = ['Nome', 'Valor Pago']
 
-school_investments_forecast = base_geral_df[(base_geral_df['Tipo'] == 'Saída') & (base_geral_df['STATUS'] != 'Pago')].groupby('ESCOLA')['VALOR'].sum().reset_index()
+school_investments_forecast = base_geral_df[base_geral_df['Tipo'] == 'Saída'].groupby('ESCOLA')['VALOR'].sum().reset_index()
 school_investments_forecast.columns = ['Nome', 'Valor Previsto']
 
-# Merge data
-df = pd.merge(df, school_investments_paid, on='Nome', how='left')
-df = pd.merge(df, school_investments_forecast, on='Nome', how='left')
+# Merge the two dataframes
+df = pd.merge(school_investments_paid, school_investments_forecast, on='Nome', how='outer')
 df['Valor Pago'].fillna(0, inplace=True)
 df['Valor Previsto'].fillna(0, inplace=True)
 
