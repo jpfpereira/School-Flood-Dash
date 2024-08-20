@@ -30,28 +30,35 @@ current_balance = paid_transactions[paid_transactions['Tipo'] == 'Entrada']['VAL
 
 total_investments = paid_transactions[paid_transactions['Tipo'] == 'Saída']['VALOR'].sum()
 
-# Calculate total investments per school (including both 'Pago' and 'Forecast')
-school_investments = base_geral_df[base_geral_df['Tipo'] == 'Saída'].groupby('ESCOLA')['VALOR'].sum().reset_index()
-school_investments.columns = ['Nome', 'Valor Investido']
+# Calculate investments per school (for both 'Pago' and 'Forecast')
+school_investments_paid = base_geral_df[(base_geral_df['Tipo'] == 'Saída') & (base_geral_df['STATUS'] == 'Pago')].groupby('ESCOLA')['VALOR'].sum().reset_index()
+school_investments_paid.columns = ['Nome', 'Valor Pago']
+
+school_investments_forecast = base_geral_df[(base_geral_df['Tipo'] == 'Saída') & (base_geral_df['STATUS'] != 'Pago')].groupby('ESCOLA')['VALOR'].sum().reset_index()
+school_investments_forecast.columns = ['Nome', 'Valor Previsto']
 
 # Merge data
-df = pd.merge(df, school_investments, on='Nome', how='left')
-df['Valor Investido'].fillna(0, inplace=True)
+df = pd.merge(df, school_investments_paid, on='Nome', how='left')
+df = pd.merge(df, school_investments_forecast, on='Nome', how='left')
+df['Valor Pago'].fillna(0, inplace=True)
+df['Valor Previsto'].fillna(0, inplace=True)
 
 # Dashboard title and balance display
 st.title("Dashboard Financeiro - Escolas Conveniadas POA")
 st.subheader(f"Saldo Atual: R$ {current_balance:,.2f}")
 st.subheader(f"Total Doado para Escolas: R$ {total_investments:,.2f}")
 
-# Bar chart for total invested values per school
+# Grouped bar chart for paid and forecasted values per school
+df_melted = df.melt(id_vars=['Nome'], value_vars=['Valor Pago', 'Valor Previsto'], var_name='Tipo', value_name='Valor')
 fig_valor_investido = px.bar(
-    df.sort_values(by='Valor Investido', ascending=False),
+    df_melted.sort_values(by=['Nome', 'Tipo']),
     x='Nome',
-    y='Valor Investido',
-    title='Valor Doado por Escola',
-    labels={'Valor Investido': 'Valor (R$)', 'Nome': 'Nome da Escola'},
-    color='Valor Investido',
-    color_continuous_scale=px.colors.sequential.Blues
+    y='Valor',
+    color='Tipo',
+    barmode='group',
+    title='Valor Investido por Escola (Pago e Previsto)',
+    labels={'Valor': 'Valor (R$)', 'Nome': 'Nome da Escola'},
+    color_discrete_map={'Valor Pago': '#636EFA', 'Valor Previsto': '#EF553B'}
 )
 fig_valor_investido.update_layout(
     title_x=0.5,
@@ -60,7 +67,8 @@ fig_valor_investido.update_layout(
     yaxis_title=None,
     margin=dict(l=20, r=20, t=30, b=200),
     height=700,
-    font=dict(size=10)
+    font=dict(size=10),
+    legend_title_text='Status'
 )
 fig_valor_investido.update_traces(
     hovertemplate="<b>%{x}</b><br>R$ %{y:.2f}"
