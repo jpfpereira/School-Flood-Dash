@@ -30,28 +30,35 @@ current_balance = paid_transactions[paid_transactions['Tipo'] == 'Entrada']['VAL
 
 total_investments = paid_transactions[paid_transactions['Tipo'] == 'Saída']['VALOR'].sum()
 
-# Calculate investments per school (only for 'Pago' status)
-school_investments = paid_transactions[paid_transactions['Tipo'] == 'Saída'].groupby('ESCOLA')['VALOR'].sum().reset_index()
-school_investments.columns = ['Nome', 'Valor Investido']
+# Calculate investments per school (for both 'Pago' and 'Forecast')
+school_investments_paid = base_geral_df[(base_geral_df['Tipo'] == 'Saída') & (base_geral_df['STATUS'] == 'Pago')].groupby('ESCOLA')['VALOR'].sum().reset_index()
+school_investments_paid.columns = ['Nome', 'Valor Pago']
+
+school_investments_forecast = base_geral_df[(base_geral_df['Tipo'] == 'Saída') & (base_geral_df['STATUS'] != 'Pago')].groupby('ESCOLA')['VALOR'].sum().reset_index()
+school_investments_forecast.columns = ['Nome', 'Valor Previsto']
 
 # Merge data
-df = pd.merge(df, school_investments, on='Nome', how='left')
-df['Valor Investido'].fillna(0, inplace=True)
+df = pd.merge(df, school_investments_paid, on='Nome', how='left')
+df = pd.merge(df, school_investments_forecast, on='Nome', how='left')
+df['Valor Pago'].fillna(0, inplace=True)
+df['Valor Previsto'].fillna(0, inplace=True)
 
 # Dashboard title and balance display
 st.title("Dashboard Financeiro - Escolas Conveniadas POA")
 st.subheader(f"Saldo Atual: R$ {current_balance:,.2f}")
 st.subheader(f"Investimentos Totais nas Escolas: R$ {total_investments:,.2f}")
 
-# Bar chart for invested values per school
+# Grouped bar chart for paid and forecasted values per school
+df_melted = df.melt(id_vars=['Nome'], value_vars=['Valor Pago', 'Valor Previsto'], var_name='Tipo', value_name='Valor')
 fig_valor_investido = px.bar(
-    df.sort_values(by='Valor Investido'),
+    df_melted.sort_values(by=['Nome', 'Tipo']),
     x='Nome',
-    y='Valor Investido',
-    title='Valor Investido por Escola',
-    labels={'Valor Investido': 'Valor Investido (R$)', 'Nome': 'Nome da Escola'},
-    color='Valor Investido',
-    color_continuous_scale=px.colors.sequential.Blues
+    y='Valor',
+    color='Tipo',
+    barmode='group',
+    title='Valor Investido por Escola (Pago e Previsto)',
+    labels={'Valor': 'Valor (R$)', 'Nome': 'Nome da Escola'},
+    color_discrete_map={'Valor Pago': '#636EFA', 'Valor Previsto': '#EF553B'}
 )
 fig_valor_investido.update_layout(
     title_x=0.5,
@@ -60,10 +67,11 @@ fig_valor_investido.update_layout(
     yaxis_title=None,
     margin=dict(l=20, r=20, t=30, b=200),
     height=700,
-    font=dict(size=10)
+    font=dict(size=10),
+    legend_title_text='Status'
 )
 fig_valor_investido.update_traces(
-    hovertemplate="<b>%{x}</b><br>Valor Investido: R$%{y}<extra></extra>"
+    hovertemplate="<b>%{x}</b><br>%{y:$.2f}"
 )
 
 st.plotly_chart(fig_valor_investido, use_container_width=True)
@@ -108,13 +116,16 @@ fig_balanco.update_traces(
 
 st.plotly_chart(fig_balanco, use_container_width=True)
 
-# Process months for recent investments (only for 'Pago' status)
+# Process months for all transactions
 month_order = ['Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
-paid_transactions['MÊS'] = paid_transactions['MÊS'].apply(lambda x: x.split('. ')[1] if pd.notnull(x) else x)
-paid_transactions['MÊS'] = pd.Categorical(paid_transactions['MÊS'], categories=month_order, ordered=True)
+base_geral_df['MÊS'] = base_geral_df['MÊS'].apply(lambda x: x.split('. ')[1] if pd.notnull(x) else x)
+base_geral_df['MÊS'] = pd.Categorical(base_geral_df['MÊS'], categories=month_order, ordered=True)
 
-# Sort investments from oldest to most recent
-recent_investments = paid_transactions[paid_transactions['Tipo'] == 'Saída'].sort_values(by=['DATA_VENCIMENTO', 'MÊS'])
+# Create a month-year column for correct sorting
+base_geral_df['MÊS_ANO'] = pd.to_datetime(base_geral_df['DATA_VENCIMENTO']).dt.to_period('M')
+
+# Sort all transactions from oldest to most recent
+all_transactions = base_geral_df[base_geral_df['Tipo'] == 'Saída'].sort_values(by=['MÊS_ANO', 'DATA_VENCIMENTO'])
 
 def paginate_dataframe(df, page_size, page_num):
     start_index = page_num * page_size
@@ -125,7 +136,7 @@ def paginate_dataframe(df, page_size, page_num):
 page_size = 20
 
 # Number of pages available
-total_pages = (len(recent_investments) + page_size - 1) // page_size
+total_pages = (len(all_transactions) + page_size - 1) // page_size
 
 # Create a container for the pagination and table
 with st.container():
@@ -133,7 +144,7 @@ with st.container():
     page_num = st.selectbox('Página', range(total_pages), format_func=lambda x: f'Página {x + 1}', key='page_selector')
 
     # Paginate the dataframe
-    paginated_df = paginate_dataframe(recent_investments[['MÊS', 'ESCOLA', 'ITEM', 'CATEGORIA', 'PRESTADOR', 'VALOR']], page_size, page_num)
+    paginated_df = paginate_dataframe(all_transactions[['MÊS', 'ESCOLA', 'ITEM', 'CATEGORIA', 'PRESTADOR', 'VALOR', 'STATUS']], page_size, page_num)
 
     # Display the paginated dataframe
     st.dataframe(paginated_df, height=400, use_container_width=True)
