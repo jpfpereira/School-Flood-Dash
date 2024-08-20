@@ -85,28 +85,13 @@ base_geral_df['MÊS_ANO'] = pd.to_datetime(base_geral_df['DATA_VENCIMENTO']).dt.
 # Sort all transactions from oldest to most recent
 all_transactions = base_geral_df[base_geral_df['Tipo'] == 'Saída'].sort_values(by=['MÊS_ANO', 'DATA_VENCIMENTO'])
 
-def paginate_dataframe(df, page_size, page_num):
-    start_index = page_num * page_size
-    end_index = start_index + page_size
-    return df[start_index:end_index]
+# Select and sort the columns for display
+display_columns = ['MÊS', 'ESCOLA', 'ITEM', 'CATEGORIA', 'PRESTADOR', 'VALOR', 'STATUS']
+sorted_transactions = all_transactions[display_columns]
+sorted_transactions = sorted_transactions.sort_values('MÊS')
 
-# Number of rows per page
-page_size = 20
+# Add a title for the table
+st.subheader("Detalhamento de Transações")
 
-# Number of pages available
-total_pages = (len(all_transactions) + page_size - 1) // page_size
-
-# Create a container for the pagination and table
-with st.container():
-    # User selects the page
-    page_num = st.selectbox('Página', range(total_pages), format_func=lambda x: f'Página {x + 1}', key='page_selector')
-
-    # Paginate the dataframe
-    paginated_df = paginate_dataframe(all_transactions[['MÊS', 'ESCOLA', 'ITEM', 'CATEGORIA', 'PRESTADOR', 'VALOR', 'STATUS']], page_size, page_num)
-    
-    # Sort the paginated dataframe by month order
-    paginated_df['MÊS'] = pd.Categorical(paginated_df['MÊS'], categories=month_order, ordered=True)
-    paginated_df = paginated_df.sort_values('MÊS')
-
-    # Display the paginated dataframe with increased height
-    st.dataframe(paginated_df, height=600, use_container_width=True)
+# Display the scrollable dataframe with increased height
+st.dataframe(sorted_transactions, height=600, use_container_width=True)
