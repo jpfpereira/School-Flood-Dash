@@ -1,69 +1,82 @@
-#,ID,ANO,MÊS,ESCOLA,ITEM,CATEGORIA,PRESTADOR,Tipo,DATA_VENCIMENTO,DATA_PAGAMENTO,VALOR,BALANÇO,TIPO_DE_PAGAMENTO,CONTABILIDADE,STATUS
-1,202408_01,2024,08. Agosto,Doador 01,Entrada - Doação - Doador 01 - 1/2,Entrada,Doador 01,Entrada,8/7/2024,, R$  150.000 , R$  150.000 ,,Entrada,Forecast
-2,202408_02,2024,08. Agosto,Doador 02,Entrada - Doação - Doador 02 - 1/3,Entrada,Doador 02,Entrada,8/9/2024,, R$  333.000 , R$  483.000 ,,Entrada,Forecast
-7,202408_07,2024,08. Agosto,Doador 03,Entrada - Doação - Doador 01 - 1/1,Entrada,Doador 03,Entrada,8/12/2024,, R$  500.000 , R$  983.000 ,,Entrada,Forecast
-22,202408_22,2024,08. Agosto,EEI Estrelinha do Céu,1/2 - Mobiliário,Mobiliário,Divimobile Mobiliário Corporativo Eirele.,Saída,8/13/2024,,-R$  928 , R$  982.072 ,,Saída,Forecast
-24,202408_24,2024,08. Agosto,EEI Estrelinha do Céu,1/2 - Mobiliário,Mobiliário,Representação Fagundes,Saída,8/13/2024,,-R$  14.950 , R$  967.122 ,,Saída,Forecast
-5,202408_05,2024,08. Agosto,IEI Anjo das Flores,Parcela 1/2 - Material Pedagógico,Material Pedagógico,Mega Sul Distribuidora,Saída,8/13/2024,,-R$  9.992 , R$  957.130 ,,Saída,Forecast
-6,202408_06,2024,08. Agosto,IEI Anjo das Flores,1/2 - Mobiliário,Mobiliário,Representação Fagundes,Saída,8/13/2024,,-R$  31.413 , R$  925.718 ,,Saída,Forecast
-8,202408_08,2024,08. Agosto,EEI NOSSA SENHORA DOS NAVEGANTES        ,Parcela 1/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,8/15/2024,,-R$  37.500 , R$  888.218 ,,Saída,Forecast
-9,202408_09,2024,08. Agosto,IEI IRMÃO MÁRIO FRIGO        ,Parcela 1/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,8/15/2024,,-R$  50.000 , R$  838.218 ,,Saída,Forecast
-10,202408_10,2024,08. Agosto,IEI SÃO VICENTE DE PAULO (CONSERVIR)      ,Parcela 1/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,8/15/2024,,-R$  50.000 , R$  788.218 ,,Saída,Forecast
-11,202408_11,2024,08. Agosto,IEI VITÓRIA,Parcela 1/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,8/15/2024,,-R$  37.500 , R$  750.718 ,,Saída,Forecast
-12,202408_12,2024,08. Agosto,IEI VILA UNIÃO,Entrada 60% - Pintura 1º Pavimento,Pintura,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,8/16/2024,,-R$  23.412 , R$  727.305 ,,Saída,Forecast
-13,202408_13,2024,08. Agosto,IEI MUNDO COLORIDO        ,Pagamento Brinquedo Pátio,Playground,CASA DO PULA PULA- MAURICIO GOULART CORREA,Saída,8/16/2024,,-R$  10.760 , R$  716.545 ,,Saída,Forecast
-14,202408_14,2024,08. Agosto,IEI MUNDO COLORIDO        ,1/2 - Cobertura do Playground,Playground,DARCI ANTUNES DA SILVEIRA – MD REFORMAS E CONSTRUÇÃO,Saída,8/16/2024,,-R$  7.500 , R$  709.045 ,,Saída,Forecast
-15,202408_15,2024,08. Agosto,IEI MUNDO COLORIDO        ,Parcela 1/2 - Serralheria - Algerosas,Serralheria,FABIO FIUZA – SERRALHERIA,Saída,8/16/2024,,-R$  1.000 , R$  708.045 ,,Saída,Forecast
-16,202408_16,2024,08. Agosto,IEI MUNDO COLORIDO        ,Parcela 1/2 - Pintura Externa e Piso Vinílico,Empreitada - Prestador Próprio,PAULO RENATO DE OLIVEIRA CAMPOS-REFORMAS E MANUTENÇÃO,Saída,8/16/2024,,-R$  30.761 , R$  677.284 ,,Saída,Forecast
-17,202408_17,2024,08. Agosto,IEI MUNDO COLORIDO        ,Parcela 1/2 - Playgroung,Playground,VERONA INDUSTRIA DE PLÁSTICOS LTDA,Saída,8/16/2024,,-R$  5.000 , R$  672.285 ,,Saída,Forecast
-18,202408_18,2024,08. Agosto,IEI MUNDO COLORIDO        ,Parcela 1/3 - Mobiliário Cozinha e Salas de Aula,Mobiliário,VIEIRA & CAVALHEIRO PRESTADORA DE SERVICOS LTDA ,Saída,8/16/2024,,-R$  67.669 , R$  604.616 ,,Saída,Forecast
-19,202408_19,2024,08. Agosto,IEI VILA UNIÃO,Entrada 60% - Pintura Refeitório e Salas,Pintura,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,8/16/2024,,-R$  23.338 , R$  581.277 ,,Saída,Forecast
-20,202408_20,2024,08. Agosto,IEI Favo de Mel,Parcela 1/4 - Construtora - Mão de Obra e Materiais,Empreitada - Prestador Parceiro,SIMIÃO E CARVALHO,Saída,8/20/2024,,-R$  85.198 , R$  496.079 ,,Saída,Forecast
-21,202408_21,2024,08. Agosto,IEI TECNOBABY        ,Parcela 1/4 - Construtora - Mão de Obra e Materiais,Empreitada - Prestador Próprio,D&G Eletro Soluções,Saída,8/20/2024,,-R$  56.851 , R$  439.228 ,,Saída,Forecast
-4,202408_04,2024,08. Agosto,EEI Estrelinha do Céu,Pagamento Material de Construção ,Material de Construção,Madereira FerrAgem Francisco LTDA.,Saída,8/20/2024,,-R$  14.698 , R$  424.530 ,,Saída,Forecast
-23,202408_23,2024,08. Agosto,EEI Estrelinha do Céu,1/2 - Mobiliário,Mobiliário,FRANCIS OFFICE MÓVEIS E SERVIÇOS,Saída,8/20/2024,,-R$  2.175 , R$  422.355 ,,Saída,Forecast
-3,202408_03,2024,08. Agosto,EEI Estrelinha do Céu,Parcela 1/2 - Mão de Obra,Mão de Obra,Julio Cesar da Silva Machado,Saída,8/21/2024,,-R$  8.100 , R$  414.255 ,,Saída,Forecast
-25,202408_25,2024,08. Agosto,IEI Anjo das Flores,Parcela 2/2 - Material Pedagógico,Material Pedagógico,Mega Sul Distribuidora,Saída,8/27/2024,,-R$  9.992 , R$  404.264 ,,Saída,Forecast
-26,202408_26,2024,08. Agosto,EEI Estrelinha do Céu,2/2 - Mobiliário,Mobiliário,FRANCIS OFFICE MÓVEIS E SERVIÇOS,Saída,8/27/2024,,-R$  2.175 , R$  402.089 ,,Saída,Forecast
-27,202408_27,2024,08. Agosto,EEI Estrelinha do Céu,Parcela 1/2 - Mão de Obra,Mão de Obra,Julio Cesar da Silva Machado,Saída,8/30/2024,,-R$  8.100 , R$  393.989 ,,Saída,Forecast
-28,202408_28,2024,08. Agosto,IEI VILA UNIÃO,Saldo 1/2  20%  - Pintura 1º Pavimento,Pintura,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,8/31/2024,,-R$  7.804 , R$  386.184 ,,Saída,Forecast
-29,202408_29,2024,08. Agosto,IEI MUNDO COLORIDO        ,Parcela 2/2 - Serralheria - Algerosas,Serralheria,FABIO FIUZA – SERRALHERIA,Saída,8/31/2024,,-R$  1.000 , R$  385.184 ,,Saída,Forecast
-30,202408_30,2024,08. Agosto,IEI VILA UNIÃO,Saldo 1/2  20%  - Pintura Refeitório e Salas,Pintura,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,8/31/2024,,-R$  7.779 , R$  377.405 ,,Saída,Forecast
-31,202408_31,2024,09. Setembro,EEI Estrelinha do Céu,2/2 - Mobiliário,Mobiliário,Divimobile Mobiliário Corporativo Eirele.,Saída,9/4/2024,,-R$  928 , R$  376.477 ,,Saída,Forecast
-32,202408_32,2024,09. Setembro,IEI MUNDO COLORIDO        ,2/2 - Cobertura do Playground,Playground,DARCI ANTUNES DA SILVEIRA – MD REFORMAS E CONSTRUÇÃO,Saída,9/5/2024,,-R$  7.500 , R$  368.977 ,,Saída,Forecast
-33,202408_33,2024,09. Setembro,IEI MUNDO COLORIDO        ,Parcela 2/2 - Pintura Externa e Piso Vinílico,Empreitada - Prestador Próprio,PAULO RENATO DE OLIVEIRA CAMPOS-REFORMAS E MANUTENÇÃO,Saída,9/5/2024,,-R$  46.141 , R$  322.836 ,,Saída,Forecast
-34,202408_34,2024,09. Setembro,IEI MUNDO COLORIDO        ,Parcela 2/3 - Mobiliário Cozinha e Salas de Aula,Mobiliário,VIEIRA & CAVALHEIRO PRESTADORA DE SERVICOS LTDA ,Saída,9/5/2024,,-R$  33.835 , R$  289.001 ,,Saída,Forecast
-35,202408_35,2024,09. Setembro,Doador 04,Entrada - Doação - Doador 04 - 1/1,Entrada,Doador 04,Entrada,9/6/2024,, R$  350.000 , R$  639.001 ,,Entrada,Forecast
-36,202408_36,2024,09. Setembro,Doador 01,Entrada - Doação - Doador 01 - 2/2,Entrada,Doador 01,Entrada,9/7/2024,, R$  150.000 , R$  789.001 ,,Entrada,Forecast
-37,202408_37,2024,09. Setembro,IEI VILA UNIÃO,Entrada 60% - Divisórias 1º Pavimento,Divisórias,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,9/9/2024,,-R$  14.800 , R$  774.201 ,,Saída,Forecast
-38,202408_38,2024,09. Setembro,IEI VILA UNIÃO,Entrada 60% - Divisórias 2º Pavimento,Divisórias,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,9/9/2024,,-R$  18.576 , R$  755.625 ,,Saída,Forecast
-39,202408_39,2024,09. Setembro,Doador 02,Entrada - Doação - Doador 02 - 2/3,Entrada,Doador 02,Entrada,9/9/2024,, R$  333.000 , R$  1.088.625 ,,Entrada,Forecast
-40,202408_40,2024,09. Setembro,IEI Favo de Mel,Parcela 2/4 - Construtora - Mão de Obra e Materiais,Empreitada - Prestador Parceiro,SIMIÃO E CARVALHO,Saída,9/10/2024,,-R$  85.198 , R$  1.003.427 ,,Saída,Forecast
-41,202408_41,2024,09. Setembro,EEI Estrelinha do Céu,2/2 - Mobiliário,Mobiliário,Representação Fagundes,Saída,9/10/2024,,-R$  14.950 , R$  988.477 ,,Saída,Forecast
-42,202408_42,2024,09. Setembro,IEI Anjo das Flores,2/2 - Mobiliário,Mobiliário,Representação Fagundes,Saída,9/12/2024,,-R$  31.413 , R$  957.064 ,,Saída,Forecast
-43,202408_43,2024,09. Setembro,EEI NOSSA SENHORA DOS NAVEGANTES        ,Parcela 2/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,9/12/2024,,-R$  37.500 , R$  919.564 ,,Saída,Forecast
-44,202408_44,2024,09. Setembro,IEI IRMÃO MÁRIO FRIGO        ,Parcela 2/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,9/12/2024,,-R$  50.000 , R$  869.564 ,,Saída,Forecast
-45,202408_45,2024,09. Setembro,IEI SÃO VICENTE DE PAULO (CONSERVIR)      ,Parcela 2/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,9/12/2024,,-R$  50.000 , R$  819.564 ,,Saída,Forecast
-46,202408_46,2024,09. Setembro,IEI VITÓRIA,Parcela 2/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,9/12/2024,,-R$  37.500 , R$  782.064 ,,Saída,Forecast
-47,202408_47,2024,09. Setembro,IEI VILA UNIÃO,Saldo 2/2  20%  - Pintura 1º Pavimento,Pintura,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,9/15/2024,,-R$  7.804 , R$  774.260 ,,Saída,Forecast
-48,202408_48,2024,09. Setembro,IEI VILA UNIÃO,Saldo 2/2  20%  - Pintura Refeitório e Salas,Pintura,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,9/15/2024,,-R$  7.779 , R$  766.481 ,,Saída,Forecast
-49,202408_49,2024,09. Setembro,IEI MUNDO COLORIDO        ,Parcela 2/2 - Playgroung,Playground,VERONA INDUSTRIA DE PLÁSTICOS LTDA,Saída,9/16/2024,,-R$  5.000 , R$  761.481 ,,Saída,Forecast
-50,202408_50,2024,09. Setembro,IEI Favo de Mel,Parcela 3/4 - Construtora - Mão de Obra e Materiais,Empreitada - Prestador Parceiro,SIMIÃO E CARVALHO,Saída,9/23/2024,,-R$  85.198 , R$  676.283 ,,Saída,Forecast
-51,202408_51,2024,09. Setembro,IEI VILA UNIÃO,Saldo 1/2  20%  - Divisórias 1º Pavimento,Divisórias,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,9/24/2024,,-R$  4.933 , R$  671.350 ,,Saída,Forecast
-52,202408_52,2024,09. Setembro,IEI VILA UNIÃO,Saldo 1/2  20%  - Divisórias 2º Pavimento,Divisórias,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,9/24/2024,,-R$  6.192 , R$  665.158 ,,Saída,Forecast
-53,202408_53,2024,09. Setembro,IEI MUNDO COLORIDO        ,Parcela 3/3 - Mobiliário Cozinha e Salas de Aula,Mobiliário,VIEIRA & CAVALHEIRO PRESTADORA DE SERVICOS LTDA ,Saída,9/25/2024,,-R$  33.835 , R$  631.323 ,,Saída,Forecast
-54,202408_54,2024,10. Outubro,IEI Favo de Mel,Parcela 4/4 - Construtora - Mão de Obra e Materiais,Empreitada - Prestador Parceiro,SIMIÃO E CARVALHO,Saída,10/1/2024,,-R$  85.198 , R$  546.125 ,,Saída,Forecast
-55,202408_55,2024,10. Outubro,IEI VILA UNIÃO,Saldo 2/2  20%  - Divisórias 1º Pavimento,Divisórias,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,10/9/2024,,-R$  4.933 , R$  541.192 ,,Saída,Forecast
-56,202408_56,2024,10. Outubro,IEI VILA UNIÃO,Saldo 2/2  20%  - Divisórias 2º Pavimento,Divisórias,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,10/9/2024,,-R$  6.192 , R$  535.000 ,,Saída,Forecast
-57,202408_57,2024,10. Outubro,Doador 02,Entrada - Doação - Doador 02 - 3/3,Entrada,Doador 02,Entrada,10/9/2024,, R$  333.000 , R$  868.000 ,,Entrada,Forecast
-58,202408_58,2024,10. Outubro,EEI NOSSA SENHORA DOS NAVEGANTES        ,Parcela 3/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,10/12/2024,,-R$  37.500 , R$  830.500 ,,Saída,Forecast
-59,202408_59,2024,10. Outubro,IEI IRMÃO MÁRIO FRIGO        ,Parcela 3/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,10/12/2024,,-R$  50.000 , R$  780.500 ,,Saída,Forecast
-60,202408_60,2024,10. Outubro,IEI SÃO VICENTE DE PAULO (CONSERVIR)      ,Parcela 3/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,10/12/2024,,-R$  50.000 , R$  730.500 ,,Saída,Forecast
-61,202408_61,2024,10. Outubro,IEI VITÓRIA,Parcela 3/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,10/12/2024,,-R$  37.500 , R$  693.000 ,,Saída,Forecast
-62,202408_62,2024,11. Novembro,EEI NOSSA SENHORA DOS NAVEGANTES        ,Parcela 4/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,11/12/2024,,-R$  37.500 , R$  655.500 ,,Saída,Forecast
-63,202408_63,2024,11. Novembro,IEI IRMÃO MÁRIO FRIGO        ,Parcela 4/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,11/12/2024,,-R$  50.000 , R$  605.500 ,,Saída,Forecast
-64,202408_64,2024,11. Novembro,IEI SÃO VICENTE DE PAULO (CONSERVIR)      ,Parcela 4/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,11/12/2024,,-R$  50.000 , R$  555.500 ,,Saída,Forecast
-65,202408_65,2024,11. Novembro,IEI VITÓRIA,Parcela 4/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,11/12/2024,,-R$  37.500 , R$  518.000 ,,Saída,Forecast
-66,202408_66,2024,11. Novembro,IEI TECNOBABY        ,Parcela 2/4 - Construtora - Mão de Obra e Materiais,Empreitada - Prestador Próprio,D&G Eletro Soluções,Saída,11/12/2024,,-R$  56.851 , R$  461.149 ,,Saída,Forecast
-67,202408_67,2024,11. Novembro,IEI TECNOBABY        ,Parcela 3/4 - Construtora - Mão de Obra e Materiais,Empreitada - Prestador Próprio,D&G Eletro Soluções,Saída,11/12/2024,,-R$  56.851 , R$  404.298 ,,Saída,Forecast
-68,202408_68,2024,11. Novembro,IEI TECNOBABY        ,Parcela 4/4 - Construtora - Mão de Obra e Materiais,Empreitada - Prestador Próprio,D&G Eletro Soluções,Saída,11/12/2024,,-R$  56.851 , R$  347.447 ,,Saída,Forecast
+#,ID,ANO,MÊS,ESCOLA,ITEM,CATEGORIA,PRESTADOR,Tipo,DATA_VENCIMENTO,DATA_PAGAMENTO,VALOR,BALANÇO,STATUS
+1,202408_01,2024,08. Agosto,Doador 01,Entrada - Doação - Doador 01 - 1/2,Entrada,Doador 01,Entrada,8/7/24,8/7/24, R$ 	150.000 , R$ 	150.000 ,Pago
+2,202408_02,2024,08. Agosto,Doador 02,Entrada - Doação - Doador 02 - 1/3,Entrada,Doador 02,Entrada,8/9/24,8/9/24, R$ 	333.000 , R$ 	483.000 ,Pago
+3,202408_07,2024,08. Agosto,Doador 03,Entrada - Doação - Doador 01 - 1/1,Entrada,Doador 03,Entrada,8/12/24,8/12/24, R$ 	500.000 , R$ 	983.000 ,Pago
+4,202408_22_MOBILIARIO,2024,08. Agosto,EEI Estrelinha do Céu,1/2 - Mobiliário,Mobiliário,Divimobile Mobiliário Corporativo Eirele.,Saída,8/13/24,8/13/24,-R$ 	1.028 , R$ 	981.972 ,Pago
+5,202408_24_MOBILIARIO,2024,08. Agosto,EEI Estrelinha do Céu,1/2 - Mobiliário,Mobiliário,Representação Fagundes,Saída,8/13/24,8/13/24,-R$ 	14.950 , R$ 	967.022 ,Pago
+6,202408_05_MATERIAL_PEDAGOGICO,2024,08. Agosto,IEI Anjo das Flores,Parcela 1/2 - Material Pedagógico,Material Pedagógico,Mega Sul Distribuidora,Saída,8/13/24,8/13/24,-R$ 	9.992 , R$ 	957.030 ,Pago
+7,202408_06_MOBILIARIO,2024,08. Agosto,IEI Anjo das Flores,1/2 - Mobiliário,Mobiliário,Representação Fagundes,Saída,8/13/24,8/13/24,-R$ 	31.413 , R$ 	925.618 ,Pago
+8,202408_23_MOBILIARIO,2024,08. Agosto,EEI Estrelinha do Céu,1/2 - Mobiliário,Mobiliário,FRANCIS OFFICE MÓVEIS E SERVIÇOS,Saída,8/14/24,8/14/24,-R$ 	2.175 , R$ 	923.443 ,Pago
+10,202408_13_CAMAS,2024,08. Agosto,IEI MUNDO COLORIDO        ,Pagamento Camas Empilháveis,Mobiliário,CASA DO PULA PULA- MAURICIO GOULART CORREA,Saída,8/16/24,8/16/24,-R$ 	10.760 , R$ 	912.683 ,Pago
+11,202408_14_COBERTURA_PLAYGROUND,2024,08. Agosto,IEI MUNDO COLORIDO        ,1/2 - Cobertura do Playground,Playground,DARCI ANTUNES DA SILVEIRA – MD REFORMAS E CONSTRUÇÃO,Saída,8/16/24,8/16/24,-R$ 	7.500 , R$ 	905.183 ,Pago
+12,202408_15_SERRALHERIA,2024,08. Agosto,IEI MUNDO COLORIDO        ,Parcela 1/2 - Serralheria - Algerosas,Serralheria,FABIO FIUZA – SERRALHERIA,Saída,8/16/24,8/16/24,-R$ 	1.000 , R$ 	904.183 ,Pago
+13,202408_16_PINTURA_PISO,2024,08. Agosto,IEI MUNDO COLORIDO        ,Parcela 1/2 - Pintura Externa e Piso Vinílico,Empreitada - Prestador Próprio,PAULO RENATO DE OLIVEIRA CAMPOS-REFORMAS E MANUTENÇÃO,Saída,8/16/24,8/16/24,-R$ 	30.761 , R$ 	873.422 ,Pago
+15,202408_18_MOBILIARIO,2024,08. Agosto,IEI MUNDO COLORIDO        ,Parcela 1/3 - Mobiliário Cozinha e Salas de Aula,Mobiliário,VIEIRA & CAVALHEIRO PRESTADORA DE SERVICOS LTDA ,Saída,8/16/24,8/16/24,-R$ 	67.669 , R$ 	805.753 ,Pago
+14,202408_17,2024,08. Agosto,IEI MUNDO COLORIDO        ,Parcela 1/2 - Playgroung,Playground,VERONA INDUSTRIA DE PLÁSTICOS LTDA,Saída,8/20/24,,-R$ 	5.000 , R$ 	800.753 ,Pago
+9,202408_12,2024,08. Agosto,IEI VILA UNIÃO,Entrada 60% - Pintura 1º Pavimento,Pintura,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,8/20/24,,-R$ 	23.412 , R$ 	777.341 ,Forecast
+16,202408_19,2024,08. Agosto,IEI VILA UNIÃO,Entrada 60% - Pintura Refeitório e Salas,Pintura,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,8/20/24,,-R$ 	23.338 , R$ 	754.002 ,Forecast
+21,202408_20,2024,08. Agosto,IEI Favo de Mel,Parcela 1/4 - Construtora - Mão de Obra e Materiais,Empreitada - Prestador Parceiro,SIMIÃO E CARVALHO,Saída,8/20/24,,-R$ 	85.198 , R$ 	668.804 ,Forecast
+23,202408_04_MATERIAL_CONSTRUCAO,2024,08. Agosto,EEI Estrelinha do Céu,Pagamento Material de Construção ,Material de Construção,Madereira FerrAgem Francisco LTDA.,Saída,8/20/24,,-R$ 	14.698 , R$ 	654.106 ,Forecast
+25,202408_69,2024,08. Agosto,CRECHE NOSSA SENHORA APARECIDA,Parcela 1/2 - Mobiliário,Mobiliário,D&D - Design de Interiores,Saída,8/20/24,,-R$ 	7.935 , R$ 	646.171 ,Forecast
+26,202408_71,2024,08. Agosto,CRECHE NOSSA SENHORA APARECIDA,Parcela 1/2 - Janelas e Portas,Portas e Janelas,TELAS GAÚCHAS LTDA,Saída,8/20/24,,-R$ 	5.580 , R$ 	640.591 ,Forecast
+27,202408_73,2024,08. Agosto,CRECHE NOSSA SENHORA APARECIDA,Pacelar 1/2 - Pisos,Piso,N2 EMPREITEIRA LTDA – NICOLE VARGAS ,Saída,8/20/24,,-R$ 	5.826 , R$ 	634.765 ,Forecast
+28,202408_75,2024,08. Agosto,CRECHE NOSSA SENHORA APARECIDA,Parcela 1/2 - Mobiliário,Mobiliário,MAURICIO THOME HINTERHOLZ ME,Saída,8/20/24,,-R$ 	11.533 , R$ 	623.232 ,Forecast
+29,202408_77,2024,08. Agosto,CRECHE NOSSA SENHORA APARECIDA,Parcela 1/2 - Pisos,Piso,PISO TECH REVESTIMENTOS CORPORATIVOS LTDA.,Saída,8/20/24,,-R$ 	5.145 , R$ 	618.088 ,Forecast
+81,202408_78_entrada,2024,08. Agosto,Doador 05,Entrada - Doação - Doador 05 - 1/1,Entrada,Doador 04,Entrada,8/20/24,, R$ 	500.000 , R$ 	1.118.088 ,Forecast
+17,202408_08,2024,08. Agosto,EEI NOSSA SENHORA DOS NAVEGANTES        ,Parcela 1/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,8/21/24,,-R$ 	37.500 , R$ 	1.080.588 ,Forecast
+18,202408_09,2024,08. Agosto,IEI IRMÃO MÁRIO FRIGO        ,Parcela 1/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,8/21/24,,-R$ 	50.000 , R$ 	1.030.588 ,Forecast
+19,202408_10,2024,08. Agosto,IEI SÃO VICENTE DE PAULO       ,Parcela 1/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,8/21/24,,-R$ 	50.000 , R$ 	980.588 ,Forecast
+20,202408_11,2024,08. Agosto,IEI VITÓRIA,Parcela 1/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,8/21/24,,-R$ 	37.500 , R$ 	943.088 ,Forecast
+24,202408_69,2024,08. Agosto,POPULAR NOVA GERAÇÃO,Parcela 1/2 - Pintura ,Pintura,Empreiteira Martini,Saída,8/21/24,,-R$ 	15.225 , R$ 	927.863 ,Forecast
+30,202408_03_MAO_DE_OBRA,2024,08. Agosto,EEI Estrelinha do Céu,Parcela 1/2 - Mão de Obra,Mão de Obra,Julio Cesar da Silva Machado,Saída,8/21/24,,-R$ 	8.100 , R$ 	919.763 ,Forecast
+22,202408_21,2024,08. Agosto,IEI TECNOBABY        ,Parcela 1/4 - Construtora - Mão de Obra e Materiais,Empreitada - Prestador Próprio,D&G Eletro Soluções,Saída,8/23/24,,-R$ 	56.851 , R$ 	862.912 ,Forecast
+31,202408_25_MATERIAL_PEDAGOGICO,2024,08. Agosto,IEI Anjo das Flores,Parcela 2/2 - Material Pedagógico,Material Pedagógico,Mega Sul Distribuidora,Saída,8/27/24,,-R$ 	9.992 , R$ 	852.920 ,Forecast
+32,202408_26_MOBILIARIO,2024,08. Agosto,EEI Estrelinha do Céu,2/2 - Mobiliário,Mobiliário,FRANCIS OFFICE MÓVEIS E SERVIÇOS,Saída,8/27/24,,-R$ 	2.175 , R$ 	850.745 ,Forecast
+33,202408_27_MAO_DE_OBRA,2024,08. Agosto,EEI Estrelinha do Céu,Parcela 1/2 - Mão de Obra,Mão de Obra,Julio Cesar da Silva Machado,Saída,8/30/24,,-R$ 	8.100 , R$ 	842.645 ,Forecast
+34,202408_28,2024,08. Agosto,IEI VILA UNIÃO,Saldo 1/2  20%  - Pintura 1º Pavimento,Pintura,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,8/31/24,,-R$ 	7.804 , R$ 	834.841 ,Forecast
+35,202408_29_SERRALHERIA,2024,08. Agosto,IEI MUNDO COLORIDO        ,Parcela 2/2 - Serralheria - Algerosas,Serralheria,FABIO FIUZA – SERRALHERIA,Saída,8/31/24,,-R$ 	1.000 , R$ 	833.841 ,Pago
+36,202408_30,2024,08. Agosto,IEI VILA UNIÃO,Saldo 1/2  20%  - Pintura Refeitório e Salas,Pintura,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,8/31/24,,-R$ 	7.779 , R$ 	826.061 ,Forecast
+37,202409_01_MOBILIARIO,2024,09. Setembro,EEI Estrelinha do Céu,2/2 - Mobiliário,Mobiliário,Divimobile Mobiliário Corporativo Eirele.,Saída,9/4/24,,-R$ 	1.028 , R$ 	825.033 ,Forecast
+38,202409_02_COBERTURA_PLAYGROUND,2024,09. Setembro,IEI MUNDO COLORIDO        ,2/2 - Cobertura do Playground,Playground,DARCI ANTUNES DA SILVEIRA – MD REFORMAS E CONSTRUÇÃO,Saída,9/5/24,,-R$ 	7.500 , R$ 	817.533 ,Forecast
+39,202409_03,2024,09. Setembro,IEI MUNDO COLORIDO        ,Parcela 2/2 - Pintura Externa e Piso Vinílico,Empreitada - Prestador Próprio,PAULO RENATO DE OLIVEIRA CAMPOS-REFORMAS E MANUTENÇÃO,Saída,9/5/24,,-R$ 	46.141 , R$ 	771.392 ,Forecast
+40,202409_04_MOBILIARIO,2024,09. Setembro,IEI MUNDO COLORIDO        ,Parcela 2/3 - Mobiliário Cozinha e Salas de Aula,Mobiliário,VIEIRA & CAVALHEIRO PRESTADORA DE SERVICOS LTDA ,Saída,9/5/24,,-R$ 	33.835 , R$ 	737.557 ,Forecast
+41,202409_05,2024,09. Setembro,Doador 04,Entrada - Doação - Doador 04 - 1/1,Entrada,Doador 04,Entrada,9/6/24,, R$ 	350.000 , R$ 	1.087.557 ,Forecast
+42,202409_06,2024,09. Setembro,Doador 01,Entrada - Doação - Doador 01 - 2/2,Entrada,Doador 01,Entrada,9/7/24,, R$ 	150.000 , R$ 	1.237.557 ,Forecast
+43,202409_07,2024,09. Setembro,IEI VILA UNIÃO,Entrada 60% - Divisórias 1º Pavimento,Divisórias,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,9/9/24,,-R$ 	14.800 , R$ 	1.222.758 ,Forecast
+44,202409_08,2024,09. Setembro,IEI VILA UNIÃO,Entrada 60% - Divisórias 2º Pavimento,Divisórias,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,9/9/24,,-R$ 	18.576 , R$ 	1.204.181 ,Forecast
+45,202409_09,2024,09. Setembro,Doador 02,Entrada - Doação - Doador 02 - 2/3,Entrada,Doador 02,Entrada,9/9/24,, R$ 	333.000 , R$ 	1.537.181 ,Forecast
+46,202409_10,2024,09. Setembro,CRECHE NOSSA SENHORA APARECIDA,Parcela 2/2 - Mobiliário,Mobiliário,D&D - Design de Interiores,Saída,9/9/24,,-R$ 	7.935 , R$ 	1.529.246 ,Forecast
+47,202409_11,2024,09. Setembro,CRECHE NOSSA SENHORA APARECIDA,Parcela 2/2 - Janelas e Portas,Portas e Janelas,TELAS GAÚCHAS LTDA,Saída,9/9/24,,-R$ 	5.580 , R$ 	1.523.666 ,Forecast
+48,202409_12,2024,09. Setembro,CRECHE NOSSA SENHORA APARECIDA,Pacelar 2/2 - Pisos,Piso,N2 EMPREITEIRA LTDA – NICOLE VARGAS ,Saída,9/9/24,,-R$ 	5.826 , R$ 	1.517.840 ,Forecast
+49,202409_13,2024,09. Setembro,IEI Favo de Mel,Parcela 2/4 - Construtora - Mão de Obra e Materiais,Empreitada - Prestador Parceiro,SIMIÃO E CARVALHO,Saída,9/10/24,,-R$ 	85.198 , R$ 	1.432.642 ,Forecast
+50,202409_14,2024,09. Setembro,EEI Estrelinha do Céu,2/2 - Mobiliário,Mobiliário,Representação Fagundes,Saída,9/10/24,,-R$ 	14.950 , R$ 	1.417.692 ,Forecast
+51,202409_15,2024,09. Setembro,POPULAR NOVA GERAÇÃO,Parcela 2/2 - Pintura ,Pintura,Empreiteira Martini,Saída,9/10/24,,-R$ 	15.225 , R$ 	1.402.467 ,Forecast
+52,202409_16,2024,09. Setembro,CRECHE NOSSA SENHORA APARECIDA,Parcela 2/2 - Pisos,Piso,PISO TECH REVESTIMENTOS CORPORATIVOS LTDA.,Saída,9/10/24,,-R$ 	5.145 , R$ 	1.397.323 ,Forecast
+53,202409_17,2024,09. Setembro,IEI Anjo das Flores,2/2 - Mobiliário,Mobiliário,Representação Fagundes,Saída,9/12/24,,-R$ 	31.413 , R$ 	1.365.910 ,Forecast
+54,202409_18,2024,09. Setembro,EEI NOSSA SENHORA DOS NAVEGANTES        ,Parcela 2/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,9/12/24,,-R$ 	37.500 , R$ 	1.328.410 ,Forecast
+55,202409_19,2024,09. Setembro,IEI IRMÃO MÁRIO FRIGO        ,Parcela 2/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,9/12/24,,-R$ 	50.000 , R$ 	1.278.410 ,Forecast
+56,202409_20,2024,09. Setembro,IEI SÃO VICENTE DE PAULO       ,Parcela 2/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,9/12/24,,-R$ 	50.000 , R$ 	1.228.410 ,Forecast
+57,202409_21,2024,09. Setembro,IEI VITÓRIA,Parcela 2/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,9/12/24,,-R$ 	37.500 , R$ 	1.190.910 ,Forecast
+58,202409_22,2024,09. Setembro,IEI VILA UNIÃO,Saldo 2/2  20%  - Pintura 1º Pavimento,Pintura,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,9/15/24,,-R$ 	7.804 , R$ 	1.183.106 ,Forecast
+59,202409_23,2024,09. Setembro,IEI VILA UNIÃO,Saldo 2/2  20%  - Pintura Refeitório e Salas,Pintura,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,9/15/24,,-R$ 	7.779 , R$ 	1.175.326 ,Forecast
+60,202409_24,2024,09. Setembro,IEI MUNDO COLORIDO        ,Parcela 2/2 - Playgroung,Playground,VERONA INDUSTRIA DE PLÁSTICOS LTDA,Saída,9/16/24,,-R$ 	5.000 , R$ 	1.170.327 ,Forecast
+61,202409_25,2024,09. Setembro,CRECHE NOSSA SENHORA APARECIDA,Parcela 2/2 - Mobiliário,Mobiliário,MAURICIO THOME HINTERHOLZ ME,Saída,9/20/24,,-R$ 	11.533 , R$ 	1.158.794 ,Forecast
+62,202409_26,2024,09. Setembro,IEI Favo de Mel,Parcela 3/4 - Construtora - Mão de Obra e Materiais,Empreitada - Prestador Parceiro,SIMIÃO E CARVALHO,Saída,9/23/24,,-R$ 	85.198 , R$ 	1.073.596 ,Forecast
+63,202409_27,2024,09. Setembro,IEI VILA UNIÃO,Saldo 1/2  20%  - Divisórias 1º Pavimento,Divisórias,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,9/24/24,,-R$ 	4.933 , R$ 	1.068.663 ,Forecast
+64,202409_28,2024,09. Setembro,IEI VILA UNIÃO,Saldo 1/2  20%  - Divisórias 2º Pavimento,Divisórias,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,9/24/24,,-R$ 	6.192 , R$ 	1.062.471 ,Forecast
+65,202409_29_MOBILIARIO,2024,09. Setembro,IEI MUNDO COLORIDO        ,Parcela 3/3 - Mobiliário Cozinha e Salas de Aula,Mobiliário,VIEIRA & CAVALHEIRO PRESTADORA DE SERVICOS LTDA ,Saída,9/25/24,,-R$ 	33.835 , R$ 	1.028.636 ,Forecast
+66,202410_01,2024,10. Outubro,IEI Favo de Mel,Parcela 4/4 - Construtora - Mão de Obra e Materiais,Empreitada - Prestador Parceiro,SIMIÃO E CARVALHO,Saída,10/1/24,,-R$ 	85.198 , R$ 	943.438 ,Forecast
+67,202410_02,2024,10. Outubro,IEI VILA UNIÃO,Saldo 2/2  20%  - Divisórias 1º Pavimento,Divisórias,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,10/9/24,,-R$ 	4.933 , R$ 	938.505 ,Forecast
+68,202410_03,2024,10. Outubro,IEI VILA UNIÃO,Saldo 2/2  20%  - Divisórias 2º Pavimento,Divisórias,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,10/9/24,,-R$ 	6.192 , R$ 	932.312 ,Forecast
+69,202410_04,2024,10. Outubro,Doador 02,Entrada - Doação - Doador 02 - 3/3,Entrada,Doador 02,Entrada,10/9/24,, R$ 	333.000 , R$ 	1.265.312 ,Forecast
+70,202410_05,2024,10. Outubro,EEI NOSSA SENHORA DOS NAVEGANTES        ,Parcela 3/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,10/12/24,,-R$ 	37.500 , R$ 	1.227.812 ,Forecast
+71,202410_06,2024,10. Outubro,IEI IRMÃO MÁRIO FRIGO        ,Parcela 3/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,10/12/24,,-R$ 	50.000 , R$ 	1.177.812 ,Forecast
+72,202410_07,2024,10. Outubro,IEI SÃO VICENTE DE PAULO       ,Parcela 3/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,10/12/24,,-R$ 	50.000 , R$ 	1.127.812 ,Forecast
+73,202410_08,2024,10. Outubro,IEI VITÓRIA,Parcela 3/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,10/12/24,,-R$ 	37.500 , R$ 	1.090.312 ,Forecast
+74,202411_01,2024,11. Novembro,EEI NOSSA SENHORA DOS NAVEGANTES        ,Parcela 4/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,11/12/24,,-R$ 	37.500 , R$ 	1.052.812 ,Forecast
+75,202411_02,2024,11. Novembro,IEI IRMÃO MÁRIO FRIGO        ,Parcela 4/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,11/12/24,,-R$ 	50.000 , R$ 	1.002.812 ,Forecast
+76,202411_03,2024,11. Novembro,IEI SÃO VICENTE DE PAULO       ,Parcela 4/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,11/12/24,,-R$ 	50.000 , R$ 	952.812 ,Forecast
+77,202411_04,2024,11. Novembro,IEI VITÓRIA,Parcela 4/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,11/12/24,,-R$ 	37.500 , R$ 	915.312 ,Forecast
+78,,2024,,IEI TECNOBABY        ,Parcela 2/4 - Construtora - Mão de Obra e Materiais,Empreitada - Prestador Próprio,D&G Eletro Soluções,Saída,,,-R$ 	56.851 , R$ 	858.461 ,Forecast
+79,,2024,,IEI TECNOBABY        ,Parcela 3/4 - Construtora - Mão de Obra e Materiais,Empreitada - Prestador Próprio,D&G Eletro Soluções,Saída,,,-R$ 	56.851 , R$ 	801.610 ,Forecast
+80,,2024,,IEI TECNOBABY        ,Parcela 4/4 - Construtora - Mão de Obra e Materiais,Empreitada - Prestador Próprio,D&G Eletro Soluções,Saída,,,-R$ 	56.851 , R$ 	744.759 ,Forecast
