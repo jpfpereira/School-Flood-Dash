@@ -1,6 +1,6 @@
 #,ID,ANO,MÊS,ESCOLA,ITEM,CATEGORIA,PRESTADOR,Tipo,DATA_VENCIMENTO,DATA_PAGAMENTO,VALOR,BALANÇO,STATUS
 1,202408_01,2024,08. Agosto,Doador 01,Entrada - Doação - Doador 01 - 1/2,Entrada,Doador 01,Entrada,8/7/24,8/7/24, R$ 	150.000 , R$ 	150.000 ,Pago
-2,202408_02,2024,08. Agosto,Doador 02,Entrada - Doação - Doador 02 - 1/3,Entrada,Doador 02,Entrada,8/9/24,8/9/24, R$ 	333.000 , R$ 	483.000 ,Pago
+2,202408_02,2024,08. Agosto,Doador 02,Entrada - Doação - Doador 02 - 1/3,Entrada,Doador 02,Entrada,8/9/24,8/9/24, R$ 	333.334 , R$ 	483.000 ,Pago
 3,202408_07,2024,08. Agosto,Doador 03,Entrada - Doação - Doador 01 - 1/1,Entrada,Doador 03,Entrada,8/12/24,8/12/24, R$ 	500.000 , R$ 	983.000 ,Pago
 4,202408_22_MOBILIARIO,2024,08. Agosto,EEI Estrelinha do Céu,1/2 - Mobiliário,Mobiliário,Divimobile Mobiliário Corporativo Eirele.,Saída,8/13/24,8/13/24,-R$ 	1.028 , R$ 	981.972 ,Pago
 5,202408_24_MOBILIARIO,2024,08. Agosto,EEI Estrelinha do Céu,1/2 - Mobiliário,Mobiliário,Representação Fagundes,Saída,8/13/24,8/13/24,-R$ 	14.950 , R$ 	967.022 ,Pago
@@ -44,7 +44,7 @@
 42,202409_06,2024,09. Setembro,Doador 01,Entrada - Doação - Doador 01 - 2/2,Entrada,Doador 01,Entrada,9/7/24,, R$ 	150.000 , R$ 	1.237.557 ,Forecast
 43,202409_07,2024,09. Setembro,IEI VILA UNIÃO,Entrada 60% - Divisórias 1º Pavimento,Divisórias,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,9/9/24,,-R$ 	14.800 , R$ 	1.222.758 ,Forecast
 44,202409_08,2024,09. Setembro,IEI VILA UNIÃO,Entrada 60% - Divisórias 2º Pavimento,Divisórias,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,9/9/24,,-R$ 	18.576 , R$ 	1.204.181 ,Forecast
-45,202409_09,2024,09. Setembro,Doador 02,Entrada - Doação - Doador 02 - 2/3,Entrada,Doador 02,Entrada,9/9/24,, R$ 	333.000 , R$ 	1.537.181 ,Forecast
+45,202409_09,2024,09. Setembro,Doador 02,Entrada - Doação - Doador 02 - 2/3,Entrada,Doador 02,Entrada,9/9/24,, R$ 	333.333 , R$ 	1.537.181 ,Forecast
 46,202409_10,2024,09. Setembro,CRECHE NOSSA SENHORA APARECIDA,Parcela 2/2 - Mobiliário,Mobiliário,D&D - Design de Interiores,Saída,9/9/24,,-R$ 	7.935 , R$ 	1.529.246 ,Forecast
 47,202409_11,2024,09. Setembro,CRECHE NOSSA SENHORA APARECIDA,Parcela 2/2 - Janelas e Portas,Portas e Janelas,TELAS GAÚCHAS LTDA,Saída,9/9/24,,-R$ 	5.580 , R$ 	1.523.666 ,Forecast
 48,202409_12,2024,09. Setembro,CRECHE NOSSA SENHORA APARECIDA,Pacelar 2/2 - Pisos,Piso,N2 EMPREITEIRA LTDA – NICOLE VARGAS ,Saída,9/9/24,,-R$ 	5.826 , R$ 	1.517.840 ,Forecast
@@ -68,7 +68,7 @@
 66,202410_01,2024,10. Outubro,IEI Favo de Mel,Parcela 4/4 - Construtora - Mão de Obra e Materiais,Empreitada - Prestador Parceiro,SIMIÃO E CARVALHO,Saída,10/1/24,,-R$ 	85.198 , R$ 	943.438 ,Forecast
 67,202410_02,2024,10. Outubro,IEI VILA UNIÃO,Saldo 2/2  20%  - Divisórias 1º Pavimento,Divisórias,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,10/9/24,,-R$ 	4.933 , R$ 	938.505 ,Forecast
 68,202410_03,2024,10. Outubro,IEI VILA UNIÃO,Saldo 2/2  20%  - Divisórias 2º Pavimento,Divisórias,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,10/9/24,,-R$ 	6.192 , R$ 	932.312 ,Forecast
-69,202410_04,2024,10. Outubro,Doador 02,Entrada - Doação - Doador 02 - 3/3,Entrada,Doador 02,Entrada,10/9/24,, R$ 	333.000 , R$ 	1.265.312 ,Forecast
+69,202410_04,2024,10. Outubro,Doador 02,Entrada - Doação - Doador 02 - 3/3,Entrada,Doador 02,Entrada,10/9/24,, R$ 	333.333 , R$ 	1.265.312 ,Forecast
 70,202410_05,2024,10. Outubro,EEI NOSSA SENHORA DOS NAVEGANTES        ,Parcela 3/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,10/12/24,,-R$ 	37.500 , R$ 	1.227.812 ,Forecast
 71,202410_06,2024,10. Outubro,IEI IRMÃO MÁRIO FRIGO        ,Parcela 3/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,10/12/24,,-R$ 	50.000 , R$ 	1.177.812 ,Forecast
 72,202410_07,2024,10. Outubro,IEI SÃO VICENTE DE PAULO       ,Parcela 3/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,10/12/24,,-R$ 	50.000 , R$ 	1.127.812 ,Forecast

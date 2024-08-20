@@ -48,6 +48,16 @@ st.title("Dashboard Financeiro - Escolas Conveniadas POA")
 st.subheader(f"Saldo Atual: R$ {current_balance:,.2f}")
 st.subheader(f"Investimentos Totais nas Escolas: R$ {total_investments:,.2f}")
 
+# Add the new text below the total investments
+st.markdown("""
+    <div style='background-color: #f0f2f6; padding: 10px; border-radius: 5px; margin-bottom: 20px;'>
+    <p style='font-size: 14px; color: #31333F;'>
+    <strong>Nota:</strong> Valores previstos para as escolas que já possuem contrato assinado ou estão em processo de assinar, 
+    valor sujeito a mudança de acordo com o avanço de mais escolas na iniciativa.
+    </p>
+    </div>
+    """, unsafe_allow_html=True)
+
 # Grouped bar chart for paid and forecasted values per school
 df_melted = df.melt(id_vars=['Nome'], value_vars=['Valor Pago', 'Valor Previsto'], var_name='Tipo', value_name='Valor')
 fig_valor_investido = px.bar(
@@ -71,50 +81,10 @@ fig_valor_investido.update_layout(
     legend_title_text='Status'
 )
 fig_valor_investido.update_traces(
-    hovertemplate="<b>%{x}</b><br>%{y:$.2f}"
+    hovertemplate="<b>%{x}</b><br>R$ %{y:.2f}"
 )
 
 st.plotly_chart(fig_valor_investido, use_container_width=True)
-
-# Calculate the Balanço (balance) for each date (only for 'Pago' status)
-balanco_df = paid_transactions[['DATA_VENCIMENTO', 'VALOR', 'Tipo']]
-
-balanco_df['VALOR'] = balanco_df.apply(
-    lambda x: x['VALOR'] if x['Tipo'] == 'Entrada' else -x['VALOR'],
-    axis=1
-)
-
-# Group by 'DATA_VENCIMENTO' and sum the 'VALOR'
-aggregated_balanco_df = balanco_df.groupby('DATA_VENCIMENTO')['VALOR'].sum().reset_index()
-
-# Sort the dataframe by 'DATA_VENCIMENTO'
-aggregated_balanco_df = aggregated_balanco_df.sort_values(by='DATA_VENCIMENTO')
-
-# Calculate the running total (cumulative sum) of 'VALOR'
-aggregated_balanco_df['TOTAL_CASH'] = aggregated_balanco_df['VALOR'].cumsum()
-
-# Plot the Balanço over time
-fig_balanco = px.line(
-    aggregated_balanco_df,
-    x='DATA_VENCIMENTO',
-    y='TOTAL_CASH',
-    title='Evolução do Balanço ao Longo do Tempo',
-    labels={'TOTAL_CASH': 'Balanço (R$)', 'DATA_VENCIMENTO': 'Data de Vencimento'},
-    markers=True
-)
-fig_balanco.update_layout(
-    title_x=0.5,
-    xaxis_tickangle=-45,
-    xaxis_title=None,
-    yaxis_title=None,
-    height=600,
-    font=dict(size=12)
-)
-fig_balanco.update_traces(
-    hovertemplate="<b>%{x|%d/%m/%Y}</b><br>Balanço: R$%{y}<extra></extra>"
-)
-
-st.plotly_chart(fig_balanco, use_container_width=True)
 
 # Process months for all transactions
 month_order = ['Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
