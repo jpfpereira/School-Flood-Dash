@@ -56,7 +56,7 @@ fig_valor_investido = px.bar(
     y='Valor',
     color='Tipo',
     barmode='group',
-    title='Valor Investido por Escola (Pago e Previsto)',
+    title='Valor Doado por Escola (Pago e Previsto)',
     labels={'Valor': 'Valor (R$)', 'Nome': 'Nome da Escola'},
     color_discrete_map={'Valor Pago': '#636EFA', 'Valor Previsto': '#EF553B'}
 )
