@@ -30,45 +30,28 @@ current_balance = paid_transactions[paid_transactions['Tipo'] == 'Entrada']['VAL
 
 total_investments = paid_transactions[paid_transactions['Tipo'] == 'Saída']['VALOR'].sum()
 
-# Calculate investments per school (for both 'Pago' and 'Forecast')
-school_investments_paid = base_geral_df[(base_geral_df['Tipo'] == 'Saída') & (base_geral_df['STATUS'] == 'Pago')].groupby('ESCOLA')['VALOR'].sum().reset_index()
-school_investments_paid.columns = ['Nome', 'Valor Pago']
-
-school_investments_forecast = base_geral_df[(base_geral_df['Tipo'] == 'Saída') & (base_geral_df['STATUS'] != 'Pago')].groupby('ESCOLA')['VALOR'].sum().reset_index()
-school_investments_forecast.columns = ['Nome', 'Valor Previsto']
+# Calculate total investments per school (including both 'Pago' and 'Forecast')
+school_investments = base_geral_df[base_geral_df['Tipo'] == 'Saída'].groupby('ESCOLA')['VALOR'].sum().reset_index()
+school_investments.columns = ['Nome', 'Valor Investido']
 
 # Merge data
-df = pd.merge(df, school_investments_paid, on='Nome', how='left')
-df = pd.merge(df, school_investments_forecast, on='Nome', how='left')
-df['Valor Pago'].fillna(0, inplace=True)
-df['Valor Previsto'].fillna(0, inplace=True)
+df = pd.merge(df, school_investments, on='Nome', how='left')
+df['Valor Investido'].fillna(0, inplace=True)
 
 # Dashboard title and balance display
 st.title("Dashboard Financeiro - Escolas Conveniadas POA")
 st.subheader(f"Saldo Atual: R$ {current_balance:,.2f}")
-st.subheader(f"Investimentos Totais nas Escolas: R$ {total_investments:,.2f}")
+st.subheader(f"Total Doado para Escolas: R$ {total_investments:,.2f}")
 
-# Add the new text below the total investments
-st.markdown("""
-    <div style='background-color: #f0f2f6; padding: 10px; border-radius: 5px; margin-bottom: 20px;'>
-    <p style='font-size: 14px; color: #31333F;'>
-    <strong>Nota:</strong> Valores previstos para as escolas que já possuem contrato assinado ou estão em processo de assinar, 
-    valor sujeito a mudança de acordo com o avanço de mais escolas na iniciativa.
-    </p>
-    </div>
-    """, unsafe_allow_html=True)
-
-# Grouped bar chart for paid and forecasted values per school
-df_melted = df.melt(id_vars=['Nome'], value_vars=['Valor Pago', 'Valor Previsto'], var_name='Tipo', value_name='Valor')
+# Bar chart for total invested values per school
 fig_valor_investido = px.bar(
-    df_melted.sort_values(by=['Nome', 'Tipo']),
+    df.sort_values(by='Valor Investido', ascending=False),
     x='Nome',
-    y='Valor',
-    color='Tipo',
-    barmode='group',
-    title='Valor Investido por Escola (Pago e Previsto)',
-    labels={'Valor': 'Valor (R$)', 'Nome': 'Nome da Escola'},
-    color_discrete_map={'Valor Pago': '#636EFA', 'Valor Previsto': '#EF553B'}
+    y='Valor Investido',
+    title='Valor Doado por Escola',
+    labels={'Valor Investido': 'Valor (R$)', 'Nome': 'Nome da Escola'},
+    color='Valor Investido',
+    color_continuous_scale=px.colors.sequential.Blues
 )
 fig_valor_investido.update_layout(
     title_x=0.5,
@@ -77,8 +60,7 @@ fig_valor_investido.update_layout(
     yaxis_title=None,
     margin=dict(l=20, r=20, t=30, b=200),
     height=700,
-    font=dict(size=10),
-    legend_title_text='Status'
+    font=dict(size=10)
 )
 fig_valor_investido.update_traces(
     hovertemplate="<b>%{x}</b><br>R$ %{y:.2f}"
@@ -115,6 +97,10 @@ with st.container():
 
     # Paginate the dataframe
     paginated_df = paginate_dataframe(all_transactions[['MÊS', 'ESCOLA', 'ITEM', 'CATEGORIA', 'PRESTADOR', 'VALOR', 'STATUS']], page_size, page_num)
+    
+    # Sort the paginated dataframe by month order
+    paginated_df['MÊS'] = pd.Categorical(paginated_df['MÊS'], categories=month_order, ordered=True)
+    paginated_df = paginated_df.sort_values('MÊS')
 
-    # Display the paginated dataframe
-    st.dataframe(paginated_df, height=400, use_container_width=True)
+    # Display the paginated dataframe with increased height
+    st.dataframe(paginated_df, height=600, use_container_width=True)
