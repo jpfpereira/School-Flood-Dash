@@ -2,29 +2,41 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-st.set_page_config(layout='wide')
+# Enforce white theme
+st.set_page_config(layout='wide', page_title="Dashboard Financeiro", initial_sidebar_state="expanded")
+
+# Apply custom CSS to enforce white background and other styles
+st.markdown("""
+    <style>
+        .stApp {
+            background-color: white;
+        }
+        .stTable {
+            background-color: white;
+        }
+        .css-1aumxhk {
+            background-color: white;
+        }
+    </style>
+""", unsafe_allow_html=True)
 
 # Load data
 base_geral_df = pd.read_csv('data/Base_Geral_Pagamentos.csv')
 
 # Data cleaning and processing
 base_geral_df['ESCOLA'] = base_geral_df['ESCOLA'].str.strip().str.upper()
-
 base_geral_df['VALOR'] = base_geral_df['VALOR'].abs()
-# Handle date format variations in 'DATA_VENCIMENTO'
 base_geral_df['DATA_VENCIMENTO'] = pd.to_datetime(base_geral_df['DATA_VENCIMENTO'], dayfirst=True, errors='coerce')
 
 # Calculate current balance and total investments (only for 'Pago' status)
 paid_transactions = base_geral_df[base_geral_df['STATUS'] == 'Pago']
 current_balance = paid_transactions[paid_transactions['Tipo'] == 'Entrada']['VALOR'].sum() - \
-                  paid_transactions[paid_transactions['Tipo'] == 'Saída']['VALOR'].sum()
-
+    paid_transactions[paid_transactions['Tipo'] == 'Saída']['VALOR'].sum()
 total_investments = paid_transactions[paid_transactions['Tipo'] == 'Saída']['VALOR'].sum()
 
 # Calculate investments per school
 school_investments_paid = base_geral_df[(base_geral_df['Tipo'] == 'Saída') & (base_geral_df['STATUS'] == 'Pago')].groupby('ESCOLA')['VALOR'].sum().reset_index()
 school_investments_paid.columns = ['Nome', 'Valor Pago']
-
 school_investments_forecast = base_geral_df[base_geral_df['Tipo'] == 'Saída'].groupby('ESCOLA')['VALOR'].sum().reset_index()
 school_investments_forecast.columns = ['Nome', 'Valor Previsto']
 
@@ -58,12 +70,13 @@ fig_valor_investido.update_layout(
     margin=dict(l=20, r=20, t=30, b=200),
     height=700,
     font=dict(size=10),
-    legend_title_text='Status'
+    legend_title_text='Status',
+    plot_bgcolor='white',
+    paper_bgcolor='white'
 )
 fig_valor_investido.update_traces(
     hovertemplate="<b>%{x}</b><br>R$ %{y:.2f}"
 )
-
 st.plotly_chart(fig_valor_investido, use_container_width=True)
 
 # Process months for all transactions
@@ -85,5 +98,26 @@ sorted_transactions = sorted_transactions.sort_values('MÊS')
 # Add a title for the table
 st.subheader("Detalhamento de Transações")
 
-# Display the scrollable dataframe with increased height
-st.dataframe(sorted_transactions, height=600, use_container_width=True)
+# Function to highlight rows based on status
+def highlight_paid(row):
+    if row['STATUS'] == 'Pago':
+        return ['background-color: #90EE90'] * len(row)  # Light green color
+    return ['background-color: white'] * len(row)  # Explicitly set white background for other rows
+
+# Apply the styling
+styled_df = sorted_transactions.style.apply(highlight_paid, axis=1)
+
+# Format the 'VALOR' column
+styled_df = styled_df.format({'VALOR': 'R$ {:.2f}'})
+
+# Display the styled dataframe
+st.dataframe(styled_df, height=600, use_container_width=True)
+
+# Add a legend for the table
+st.markdown("""
+<div style="background-color: #f0f2f6; padding: 10px; border-radius: 5px; margin-top: 20px;">
+    <strong>Legenda:</strong><br>
+    <span style="display: inline-block; width: 20px; height: 10px; background-color: #90EE90; margin-right: 5px;"></span> Transações Pagas<br>
+    <span style="display: inline-block; width: 20px; height: 10px; background-color: white; border: 1px solid #ccc; margin-right: 5px;"></span> Transações Previstas
+</div>
+""", unsafe_allow_html=True)
