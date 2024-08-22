@@ -2,23 +2,8 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-# Enforce white theme
-st.set_page_config(layout='wide', page_title="Dashboard Financeiro", initial_sidebar_state="expanded")
-
-# Apply custom CSS to enforce white background and other styles
-st.markdown("""
-    <style>
-        .stApp {
-            background-color: white;
-        }
-        .stTable {
-            background-color: white;
-        }
-        .css-1aumxhk {
-            background-color: white;
-        }
-    </style>
-""", unsafe_allow_html=True)
+# Set page configuration
+st.set_page_config(layout='wide', page_title="Dashboard Financeiro", page_icon="💰")
 
 # Load data
 base_geral_df = pd.read_csv('data/Base_Geral_Pagamentos.csv')
@@ -70,9 +55,7 @@ fig_valor_investido.update_layout(
     margin=dict(l=20, r=20, t=30, b=200),
     height=700,
     font=dict(size=10),
-    legend_title_text='Status',
-    plot_bgcolor='white',
-    paper_bgcolor='white'
+    legend_title_text='Status'
 )
 fig_valor_investido.update_traces(
     hovertemplate="<b>%{x}</b><br>R$ %{y:.2f}"
@@ -102,7 +85,7 @@ st.subheader("Detalhamento de Transações")
 def highlight_paid(row):
     if row['STATUS'] == 'Pago':
         return ['background-color: #90EE90'] * len(row)  # Light green color
-    return ['background-color: white'] * len(row)  # Explicitly set white background for other rows
+    return [''] * len(row)  # Default to no highlighting for other rows
 
 # Apply the styling
 styled_df = sorted_transactions.style.apply(highlight_paid, axis=1)
@@ -115,7 +98,7 @@ st.dataframe(styled_df, height=600, use_container_width=True)
 
 # Add a legend for the table
 st.markdown("""
-<div style="background-color: #f0f2f6; padding: 10px; border-radius: 5px; margin-top: 20px;">
+<div style="background-color: #F0F2F6; padding: 10px; border-radius: 5px; margin-top: 20px;">
     <strong>Legenda:</strong><br>
     <span style="display: inline-block; width: 20px; height: 10px; background-color: #90EE90; margin-right: 5px;"></span> Transações Pagas<br>
     <span style="display: inline-block; width: 20px; height: 10px; background-color: white; border: 1px solid #ccc; margin-right: 5px;"></span> Transações Previstas
