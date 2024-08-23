@@ -3,7 +3,7 @@ import plotly.express as px
 import streamlit as st
 
 # Set page configuration
-st.set_page_config(layout='wide', page_title="Dashboard Financeiro", page_icon="💰")
+st.set_page_config(layout='wide', page_title="Dashboard Financeiro")
 
 # Load data
 base_geral_df = pd.read_csv('data/Base_Geral_Pagamentos.csv')
