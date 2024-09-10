@@ -1,17 +1,17 @@
 #,ID,ANO,MÊS,ESCOLA,ITEM,CATEGORIA,PRESTADOR,Tipo,DATA_VENCIMENTO,DATA_PAGAMENTO,VALOR,BALANÇO,STATUS
-1.0,202408_01,2024,08. Agosto,Doador 01,Entrada - Doação - Doador 01 - 1/2,Entrada,Doador 01,Entrada,2024-08-07,2024-08-07,150000.0,150000.0,Pago
-2.0,202408_02,2024,08. Agosto,Doador 02,Entrada - Doação - Doador 02 - 1/3,Entrada,Doador 02,Entrada,2024-08-09,2024-08-09,333333.33,483333.33,Pago
-3.0,202408_07,2024,08. Agosto,Doador 03,Entrada - Doação - Doador 01 - 1/1,Entrada,Doador 03,Entrada,2024-08-12,2024-08-12,500000.0,983333.3300000001,Pago
-4.0,202408_22_MOBILIARIO,2024,08. Agosto,EEI Estrelinha do Céu,1/2 - Mobiliário,Mobiliário,Divimobile Mobiliário Corporativo Eirele.,Saída,2024-08-13,2024-08-13,-1028.0,982305.3300000001,Pago
-5.0,202408_24_MOBILIARIO,2024,08. Agosto,EEI Estrelinha do Céu,1/2 - Mobiliário,Mobiliário,Representação Fagundes,Saída,2024-08-13,2024-08-13,-14950.0,967355.3300000001,Pago
-6.0,202408_05_MATERIAL_PEDAGOGICO,2024,08. Agosto,IEI Anjo das Flores,Parcela 1/2 - Material Pedagógico,Material Pedagógico,Mega Sul Distribuidora,Saída,2024-08-13,2024-08-13,-9991.795,957363.535,Pago
-7.0,202408_06_MOBILIARIO,2024,08. Agosto,IEI Anjo das Flores,1/2 - Mobiliário,Mobiliário,Representação Fagundes,Saída,2024-08-13,2024-08-13,-31412.5,925951.035,Pago
-8.0,202408_23_MOBILIARIO,2024,08. Agosto,EEI Estrelinha do Céu,1/2 - Mobiliário,Mobiliário,FRANCIS OFFICE MÓVEIS E SERVIÇOS,Saída,2024-08-14,2024-08-14,-2175.0,923776.035,Pago
-10.0,202408_13_CAMAS,2024,08. Agosto,IEI MUNDO COLORIDO        ,Pagamento Camas Empilháveis,Mobiliário,CASA DO PULA PULA- MAURICIO GOULART CORREA,Saída,2024-08-16,2024-08-16,-10760.0,913016.035,Pago
-11.0,202408_14_COBERTURA_PLAYGROUND,2024,08. Agosto,IEI MUNDO COLORIDO        ,1/2 - Cobertura do Playground,Playground,DARCI ANTUNES DA SILVEIRA – MD REFORMAS E CONSTRUÇÃO,Saída,2024-08-16,2024-08-16,-7500.0,905516.035,Pago
-12.0,202408_15_SERRALHERIA,2024,08. Agosto,IEI MUNDO COLORIDO        ,Parcela 1/2 - Serralheria - Algerosas,Serralheria,FABIO FIUZA – SERRALHERIA,Saída,2024-08-16,2024-08-16,-1000.0,904516.035,Pago
-13.0,202408_16_PINTURA_PISO,2024,08. Agosto,IEI MUNDO COLORIDO        ,Parcela 1/2 - Pintura Externa e Piso Vinílico,Empreitada - Prestador Próprio,PAULO RENATO DE OLIVEIRA CAMPOS-REFORMAS E MANUTENÇÃO,Saída,2024-08-16,2024-08-16,-30760.800000000003,873755.235,Pago
-15.0,202408_18_MOBILIARIO,2024,08. Agosto,IEI MUNDO COLORIDO        ,Parcela 1/3 - Mobiliário Cozinha e Salas de Aula,Mobiliário,VIEIRA & CAVALHEIRO PRESTADORA DE SERVICOS LTDA ,Saída,2024-08-16,2024-08-16,-67669.36,806085.875,Pago
+1.0,202408_01,2024,08. Agosto,Doador 01,Entrada - Doação - Doador 01 - 1/2,Entrada,Doador 01,Entrada,2024-08-07,2024-08-07 00:00:00,150000.0,150000.0,Pago
+2.0,202408_02,2024,08. Agosto,Doador 02,Entrada - Doação - Doador 02 - 1/3,Entrada,Doador 02,Entrada,2024-08-09,2024-08-09 00:00:00,333333.33,483333.33,Pago
+3.0,202408_07,2024,08. Agosto,Doador 03,Entrada - Doação - Doador 01 - 1/1,Entrada,Doador 03,Entrada,2024-08-12,2024-08-12 00:00:00,500000.0,983333.3300000001,Pago
+4.0,202408_22_MOBILIARIO,2024,08. Agosto,EEI Estrelinha do Céu,1/2 - Mobiliário,Mobiliário,Divimobile Mobiliário Corporativo Eirele.,Saída,2024-08-13,2024-08-13 00:00:00,-1028.0,982305.3300000001,Pago
+5.0,202408_24_MOBILIARIO,2024,08. Agosto,EEI Estrelinha do Céu,1/2 - Mobiliário,Mobiliário,Representação Fagundes,Saída,2024-08-13,2024-08-13 00:00:00,-14950.0,967355.3300000001,Pago
+6.0,202408_05_MATERIAL_PEDAGOGICO,2024,08. Agosto,IEI Anjo das Flores,Parcela 1/2 - Material Pedagógico,Material Pedagógico,Mega Sul Distribuidora,Saída,2024-08-13,2024-08-13 00:00:00,-9991.795,957363.535,Pago
+7.0,202408_06_MOBILIARIO,2024,08. Agosto,IEI Anjo das Flores,1/2 - Mobiliário,Mobiliário,Representação Fagundes,Saída,2024-08-13,2024-08-13 00:00:00,-31412.5,925951.035,Pago
+8.0,202408_23_MOBILIARIO,2024,08. Agosto,EEI Estrelinha do Céu,1/2 - Mobiliário,Mobiliário,FRANCIS OFFICE MÓVEIS E SERVIÇOS,Saída,2024-08-14,2024-08-14 00:00:00,-2175.0,923776.035,Pago
+10.0,202408_13_CAMAS,2024,08. Agosto,IEI MUNDO COLORIDO        ,Pagamento Camas Empilháveis,Mobiliário,CASA DO PULA PULA- MAURICIO GOULART CORREA,Saída,2024-08-16,2024-08-16 00:00:00,-10760.0,913016.035,Pago
+11.0,202408_14_COBERTURA_PLAYGROUND,2024,08. Agosto,IEI MUNDO COLORIDO        ,1/2 - Cobertura do Playground,Playground,DARCI ANTUNES DA SILVEIRA – MD REFORMAS E CONSTRUÇÃO,Saída,2024-08-16,2024-08-16 00:00:00,-7500.0,905516.035,Pago
+12.0,202408_15_SERRALHERIA,2024,08. Agosto,IEI MUNDO COLORIDO        ,Parcela 1/2 - Serralheria - Algerosas,Serralheria,FABIO FIUZA – SERRALHERIA,Saída,2024-08-16,2024-08-16 00:00:00,-1000.0,904516.035,Pago
+13.0,202408_16_PINTURA_PISO,2024,08. Agosto,IEI MUNDO COLORIDO        ,Parcela 1/2 - Pintura Externa e Piso Vinílico,Empreitada - Prestador Próprio,PAULO RENATO DE OLIVEIRA CAMPOS-REFORMAS E MANUTENÇÃO,Saída,2024-08-16,2024-08-16 00:00:00,-30760.800000000003,873755.235,Pago
+15.0,202408_18_MOBILIARIO,2024,08. Agosto,IEI MUNDO COLORIDO        ,Parcela 1/3 - Mobiliário Cozinha e Salas de Aula,Mobiliário,VIEIRA & CAVALHEIRO PRESTADORA DE SERVICOS LTDA ,Saída,2024-08-16,2024-08-16 00:00:00,-67669.36,806085.875,Pago
 14.0,202408_17_PLAYGROUND,2024,08. Agosto,IEI MUNDO COLORIDO        ,Parcela 1/2 - Playgroung,Playground,VERONA INDUSTRIA DE PLÁSTICOS LTDA,Saída,2024-08-20,,-4999.5,801086.375,Pago
 21.0,202408_20_EMPREITADA,2024,08. Agosto,IEI Favo de Mel,Parcela 1/4 - Construtora - Mão de Obra e Materiais,Empreitada - Prestador Parceiro,SIMIÃO E CARVALHO,Saída,2024-08-20,,-85198.0,715888.375,Pago
 25.0,202408_69_MOBILIARIO,2024,08. Agosto,CRECHE NOSSA SENHORA APARECIDA,Parcela 1/2 - Mobiliário,Mobiliário,D&D - Design de Interiores,Saída,2024-08-20,,-7935.0,707953.375,Pago
@@ -52,103 +52,105 @@
 47.0,202409_11_TELAS,2024,09. Setembro,CRECHE NOSSA SENHORA APARECIDA,Parcela 2/2 - Janelas e Portas,Portas e Janelas,TELAS GAÚCHAS LTDA,Saída,2024-09-03,,-5330.0,834006.2260000001,Pago
 52.0,202409_16,2024,09. Setembro,CRECHE NOSSA SENHORA APARECIDA,Parcela 2/2 - Pisos,Piso,PISO TECH REVESTIMENTOS CORPORATIVOS LTDA.,Saída,2024-09-03,,-5244.64,828761.5860000001,Pago
 ,202409_75_ARCONDICIONADO,2024,09. Setembro,ECEI Brincando e Aprendendo ,Parcela 1/2 - MANUTENÇÃO AR CONDICIONADO,Ar-Condicionado,CLIMA HEAT,Saída,2024-09-03,,-4530.0,824231.5860000001,Pago
-37.0,202409_01_MOBILIARIO,2024,09. Setembro,EEI Estrelinha do Céu,2/2 - Mobiliário,Mobiliário,Divimobile Mobiliário Corporativo Eirele.,Saída,2024-09-04,,-1028.0,823203.5860000001,Forecast
-,,2024,08. Agosto,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 1/2 - Laudo Estrutural,Laudo Técnico,VIEIRA & CAVALHEIRO PRESTADORA DE SERVICOS LTDA ,Saída,2024-09-05,,-3689.0,819514.5860000001,Forecast
-,,2024,08. Agosto,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 1/3 - Gradil de Concreto,Gradil,Vector Insdústria e Comércio de Pré Fabricados de Concretos,Saída,2024-09-05,,-10912.0,808602.5860000001,Forecast
-,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 1/3 - Pintura,Pintura,Xame Onofre Rafael ,Saída,2024-09-05,,-26949.41,781653.1760000001,Forecast
-,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 1/3 - Reforma Telhado,Telhado,Xame Onofre Rafael ,Saída,2024-09-05,,-29002.88,752650.2960000001,Forecast
-,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 1/3 - Serviços Elétricos,Serviços Elétricos,Rogério da Silva Markunas,Saída,2024-09-05,,-3486.54,749163.756,Forecast
-,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 1/2 - Mobiliário,Mobiliário,JBM Soluções em Móveis,Saída,2024-09-05,,-15803.1,733360.6560000001,Forecast
-,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Pagamento Tintas,Tintas,Amauri Tintas,Saída,2024-09-05,,-6349.5,727011.1560000001,Forecast
-,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 1/3 - Madereira,Material de Construção,Redemac AJ Reis,Saída,2024-09-05,,-6900.26,720110.8960000001,Forecast
-,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 1/2 - Material Elétrico,Material de Construção,Plenobras Elétricos e Hidráulicos,Saída,2024-09-05,,-3618.06,716492.836,Forecast
-,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 1/3 - Portas e Janelas,Portas e Janelas,STADULNI VIDROS AALUMINIOS E PVC,Saída,2024-09-05,,-7156.052,709336.784,Forecast
-38.0,202409_02_COBERTURA_PLAYGROUND,2024,09. Setembro,IEI MUNDO COLORIDO        ,2/2 - Cobertura do Playground,Playground,DARCI ANTUNES DA SILVEIRA – MD REFORMAS E CONSTRUÇÃO,Saída,2024-09-05,,-7500.0,701836.784,Forecast
-39.0,202409_03,2024,09. Setembro,IEI MUNDO COLORIDO        ,Parcela 2/2 - Pintura Externa e Piso Vinílico,Empreitada - Prestador Próprio,PAULO RENATO DE OLIVEIRA CAMPOS-REFORMAS E MANUTENÇÃO,Saída,2024-09-05,,-46141.2,655695.584,Forecast
-40.0,202409_04_MOBILIARIO,2024,09. Setembro,IEI MUNDO COLORIDO        ,Parcela 2/3 - Mobiliário Cozinha e Salas de Aula,Mobiliário,VIEIRA & CAVALHEIRO PRESTADORA DE SERVICOS LTDA ,Saída,2024-09-05,,-33834.68,621860.904,Forecast
-34.0,202408_28,2024,09. Setembro,IEI VILA UNIÃO,Saldo 1/2  20%  - Pintura 1º Pavimento,Pintura,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,2024-09-06,,-7804.162,614056.742,Forecast
-22.0,202409_42_CONSTRUTORA,2024,09. Setembro,IEI TECNOBABY        ,Parcela 1/2 - Construtora - Mão de Obra e Materiais,Empreitada - Prestador Próprio,D&G Eletro Soluções,Saída,2024-09-06,,-21144.22,592912.522,Forecast
-79.0,202409_43_ELETROS,2024,09. Setembro,IEI TECNOBABY        ,Entrada Eletrodomésticos,Eletrodomésticos ,Mega Sul Distribuidora,Saída,2024-09-06,,-37308.39,555604.132,Forecast
-81.0,202409_44_TELHADO,2024,09. Setembro,IEI TECNOBABY        ,Entrada - Reforma Telhado,Telhado,JR Projetos e Construções,Saída,2024-09-06,,-24414.35,531189.782,Forecast
-83.0,202409_45_UTENSILIOS,2024,09. Setembro,IEI TECNOBABY        ,Entrada - Utensílios,Utensílios,Mega Sul Distribuidora,Saída,2024-09-06,,-5378.13,525811.652,Forecast
-85.0,202409_46_MOBILIARIO,2024,09. Setembro,IEI TECNOBABY        ,Entrada - Mobiliário,Mobiliário,Mega Sul Distribuidora,Saída,2024-09-06,,-25457.5,500354.152,Forecast
-,202409_30_GRADIL,2024,09. Setembro,IEI João Paulo II,Parcela 1/2 - Grades,Gradil,Serralheiro Cleber Silva Almeida,Saída,2024-09-06,,-2640.0,497714.152,Forecast
-,202409_32_PISO,2024,09. Setembro,IEI João Paulo II,Parcela 1/2 - Instalação Piso Vinilico,Piso,Mutte Instalação de Pisos Vinilicos,Saída,2024-09-06,,-5550.0,492164.152,Forecast
-,202409_34_PISO,2024,09. Setembro,IEI João Paulo II,Parcela 1/2 -  Piso Vinilico,Piso,CASA DO PARQUET,Saída,2024-09-06,,-25288.0,466876.152,Forecast
-,202409_36_PINTURAMURO,2024,09. Setembro,IEI João Paulo II,Parcela 1/2 -  Pintura Muro,Pintura,José Kunkel,Saída,2024-09-06,,-6250.0,460626.152,Forecast
-,202409_38_ARCONDICIOANDO,2024,09. Setembro,IEI João Paulo II,Parcela 1/2 -  Ar-Condicionado,Ar-Condicionado,Frigelar Comercio e industria LTDA,Saída,2024-09-06,,-13193.0,447433.152,Forecast
-,202409_40_ARCONDICIOANDO,2024,09. Setembro,IEI João Paulo II,Parcela 1/2 -  Ar-Condicionado Instalação,Ar-Condicionado,Ear Engenharia Termica,Saída,2024-09-06,,-4097.0,443336.152,Forecast
-41.0,202409_05,2024,09. Setembro,Doador 04,Entrada - Doação - Doador 04 - 1/1,Entrada,Doador 04,Entrada,2024-09-06,,350000.0,793336.152,Forecast
-42.0,202409_06,2024,09. Setembro,Doador 01,Entrada - Doação - Doador 01 - 2/2,Entrada,Doador 01,Entrada,2024-09-07,,150000.0,943336.152,Forecast
-33.0,202408_27_MAO_DE_OBRA,2024,08. Agosto,EEI Estrelinha do Céu,Parcela 2/2 - Mão de Obra,Mão de Obra,Julio Cesar da Silva Machado,Saída,2024-09-09,,-8100.0,935236.152,Forecast
-43.0,202409_07,2024,09. Setembro,IEI VILA UNIÃO,Entrada 60% - Divisórias 1º Pavimento,Divisórias,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,2024-09-09,,-14799.858,920436.294,Forecast
-44.0,202409_08,2024,09. Setembro,IEI VILA UNIÃO,Entrada 60% - Divisórias 2º Pavimento,Divisórias,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,2024-09-09,,-18576.408,901859.8859999999,Forecast
-45.0,202409_09,2024,09. Setembro,Doador 02,Entrada - Doação - Doador 02 - 2/3,Entrada,Doador 02,Entrada,2024-09-09,,333333.0,1235192.886,Forecast
-,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 1/3 - Mobiliário,Mobiliário,Like Móveis Planejados,Saída,2024-09-10,,-18890.66,1216302.226,Forecast
-,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Pagamento Limpeza Coifa,Limpeza,VIEIRA & CAVALHEIRO PRESTADORA DE SERVICOS LTDA ,Saída,2024-09-10,,-700.0,1215602.226,Forecast
-,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Pagamento Limpeza Caixa D'agua,Limpeza,Dedetiza,Saída,2024-09-10,,-420.0,1215182.226,Forecast
-,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Pagamento Desinsetização,Limpeza,Dedetiza,Saída,2024-09-10,,-790.0,1214392.226,Forecast
-,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Pagamento Vidros,Vidros,Vidraçaria Dinamarca,Saída,2024-09-10,,-580.0,1213812.226,Forecast
-,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 2/3 - Pintura,Pintura,Xame Onofre Rafael ,Saída,2024-09-10,,-26949.41,1186862.816,Forecast
-,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 2/3 - Reforma Telhado ,Telhado,Xame Onofre Rafael ,Saída,2024-09-10,,-29002.88,1157859.9360000002,Forecast
-,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 2/3 - Serviços Elétricos,Serviços Elétricos,Rogério da Silva Markunas,Saída,2024-09-10,,-3486.54,1154373.3960000002,Forecast
-,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 2/3 - Mobiliário,Mobiliário,Like Móveis Planejados,Saída,2024-09-10,,-18890.66,1135482.7360000003,Forecast
-,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 2/3 - Madereira,Material de Construção,Redemac AJ Reis,Saída,2024-09-10,,-6900.26,1128582.4760000003,Forecast
-49.0,202409_13,2024,09. Setembro,IEI Favo de Mel,Parcela 2/4 - Construtora - Mão de Obra e Materiais,Empreitada - Prestador Parceiro,SIMIÃO E CARVALHO,Saída,2024-09-10,,-85198.0,1043384.4760000003,Forecast
-50.0,202409_14,2024,09. Setembro,EEI Estrelinha do Céu,2/2 - Mobiliário,Mobiliário,Representação Fagundes,Saída,2024-09-10,,-14950.0,1028434.4760000003,Forecast
-51.0,202409_15_PINTURA,2024,09. Setembro,POPULAR NOVA GERAÇÃO,Parcela 2/2 - Pintura ,Pintura,Empreiteira Martini,Saída,2024-09-10,,-15225.0,1013209.4760000003,Forecast
-,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 3/3 - Serviços Elétricos,Serviços Elétricos,Rogério da Silva Markunas,Saída,2024-09-10,,-3486.54,1009722.9360000002,Forecast
-,202409_39_ARCONDICIOANDO,2024,09. Setembro,IEI João Paulo II,Parcela 2/2 - Ar-Condicionado,Ar-Condicionado,Frigelar Comercio e industria LTDA,Saída,2024-09-10,,-13193.0,996529.9360000002,Forecast
-,202409_41_ARCONDICIOANDO,2024,09. Setembro,IEI João Paulo II,Parcela 2/2 - Ar-Condicionado Instalação,Ar-Condicionado,Ear Engenharia Termica,Saída,2024-09-10,,-4097.0,992432.9360000002,Forecast
-,202409_64_PINTURA,2024,09. Setembro,ECEI Brincando e Aprendendo ,Parcela 2/2 - Piso e Pintura,Pintura,Rodrigo Borges ME,Saída,2024-09-11,,-4642.0,987790.9360000002,Forecast
-,202409_66_LIXEIRAS,2024,09. Setembro,ECEI Brincando e Aprendendo ,Parcela 2/2 - Lixeiras,Mobiliário,AZ Livros e Brinquedos,Saída,2024-09-11,,-3040.0,984750.9360000002,Forecast
-,202409_68_MOBILIARIO,2024,09. Setembro,ECEI Brincando e Aprendendo ,Parcela 2/2 - Mobiliário,Mobiliário,Rodrigo Borges ME,Saída,2024-09-11,,-4280.0,980470.9360000002,Forecast
-53.0,202409_17,2024,09. Setembro,IEI Anjo das Flores,2/2 - Mobiliário,Mobiliário,Representação Fagundes,Saída,2024-09-12,,-31412.5,949058.4360000002,Forecast
-54.0,202409_18,2024,09. Setembro,EEI NOSSA SENHORA DOS NAVEGANTES        ,Parcela 2/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,2024-09-12,,-37500.0,911558.4360000002,Forecast
-55.0,202409_19,2024,09. Setembro,IEI IRMÃO MÁRIO FRIGO        ,Parcela 2/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,2024-09-12,,-50000.0,861558.4360000002,Forecast
-56.0,202409_20,2024,09. Setembro,IEI SÃO VICENTE DE PAULO (CONSERVIR)      ,Parcela 2/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,2024-09-12,,-50000.0,811558.4360000002,Forecast
-57.0,202409_21,2024,09. Setembro,IEI VITÓRIA,Parcela 2/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,2024-09-12,,-27731.75,783826.6860000002,Forecast
-,202409_62_MOBILIARIO,2024,09. Setembro,ECEI Brincando e Aprendendo ,Parcela 2/2 - Mobiliário,Mobiliário,AZ Livros e Brinquedos,Saída,2024-09-12,,-14835.0,768991.6860000002,Forecast
-,202409_76_ARCONDICIONADO,2024,09. Setembro,ECEI Brincando e Aprendendo ,Parcela 2/2 - MANUTENÇÃO AR CONDICIONADO,Ar-Condicionado,CLIMA HEAT,Saída,2024-09-12,,-4530.0,764461.6860000002,Forecast
-58.0,202409_22,2024,09. Setembro,IEI VILA UNIÃO,Saldo 2/2  20%  - Pintura 1º Pavimento,Pintura,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,2024-09-15,,-7804.162,756657.5240000002,Forecast
-59.0,202409_23,2024,09. Setembro,IEI VILA UNIÃO,Saldo 2/2  20%  - Pintura Refeitório e Salas,Pintura,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,2024-09-15,,-7779.414000000001,748878.1100000002,Forecast
-,202409_37_PINTURAMURO,2024,09. Setembro,IEI João Paulo II,Parcela 2/2 - Pintura Muro,Pintura,José Kunkel,Saída,2024-09-15,,-6250.0,742628.1100000002,Forecast
-60.0,202409_24,2024,09. Setembro,IEI MUNDO COLORIDO        ,Parcela 2/2 - Playgroung,Playground,VERONA INDUSTRIA DE PLÁSTICOS LTDA,Saída,2024-09-16,,-4999.5,737628.6100000002,Forecast
-,202409_33_PISO,2024,09. Setembro,IEI João Paulo II,Parcela 2/2 - Instalação Piso Vinilico,Piso,Mutte Instalação de Pisos Vinilicos,Saída,2024-09-17,,-5550.0,732078.6100000002,Forecast
-,202409_35_PISO,2024,09. Setembro,IEI João Paulo II,Parcela 2/2 - Piso Vinilico,Piso,CASA DO PARQUET,Saída,2024-09-17,,-25288.0,706790.6100000002,Forecast
-,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 2/2 - Laudo Estrutural,Laudo Técnico,VIEIRA & CAVALHEIRO PRESTADORA DE SERVICOS LTDA ,Saída,2024-09-18,,-3689.0,703101.6100000002,Forecast
-,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 2/3 - Gradil de Concreto,Gradil,Vector Insdústria e Comércio de Pré Fabricados de Concretos,Saída,2024-09-18,,-10912.0,692189.6100000002,Forecast
-61.0,202409_25_MOBILIARIO,2024,09. Setembro,CRECHE NOSSA SENHORA APARECIDA,Parcela 2/2 - Mobiliário,Mobiliário,MAURICIO THOME HINTERHOLZ ME,Saída,2024-09-20,,-11532.3,680657.3100000002,Forecast
-,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 3/3 - Pintura,Pintura,Xame Onofre Rafael ,Saída,2024-09-20,,-26949.41,653707.9000000001,Forecast
-,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 3/3 - Madereira,Material de Construção,Redemac AJ Reis,Saída,2024-09-20,,-6900.26,646807.6400000001,Forecast
-,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 3/3 - Gradil de Concreto,Gradil,Vector Insdústria e Comércio de Pré Fabricados de Concretos,Saída,2024-09-22,,-10912.0,635895.6400000001,Forecast
-80.0,202409_47_ELETRODOMESTICOS,2024,09. Setembro,IEI TECNOBABY        ,Saldo Eletrodomésticos ,Eletrodomésticos ,Mega Sul Distribuidora,Saída,2024-09-22,,-37308.39,598587.2500000001,Forecast
-84.0,202409_48_UTENSILIOS,2024,09. Setembro,IEI TECNOBABY        ,Saldo - Utensílios,Utensílios,Mega Sul Distribuidora,Saída,2024-09-22,,-5378.13,593209.1200000001,Forecast
-62.0,202409_26,2024,09. Setembro,IEI Favo de Mel,Parcela 3/4 - Construtora - Mão de Obra e Materiais,Empreitada - Prestador Parceiro,SIMIÃO E CARVALHO,Saída,2024-09-23,,-85198.0,508011.1200000001,Forecast
-,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 2/2 - Mobiliário,Mobiliário,JBM Soluções em Móveis,Saída,2024-09-23,,-15803.1,492208.02000000014,Forecast
-,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 2/2 - Material Elétrico,Material de Construção,Plenobras Elétricos e Hidráulicos,Saída,2024-09-23,,-3618.06,488589.96000000014,Forecast
-,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 2/3 - Portas e Janelas,Portas e Janelas,STADULNI VIDROS AALUMINIOS E PVC,Saída,2024-09-23,,-5367.039,483222.92100000015,Forecast
-63.0,202409_27,2024,09. Setembro,IEI VILA UNIÃO,Saldo 1/2  20%  - Divisórias 1º Pavimento,Divisórias,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,2024-09-24,,-4933.286,478289.6350000001,Forecast
-64.0,202409_28,2024,09. Setembro,IEI VILA UNIÃO,Saldo 1/2  20%  - Divisórias 2º Pavimento,Divisórias,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,2024-09-24,,-6192.136,472097.4990000001,Forecast
-65.0,202409_29_MOBILIARIO,2024,09. Setembro,IEI MUNDO COLORIDO        ,Parcela 3/3 - Mobiliário Cozinha e Salas de Aula,Mobiliário,VIEIRA & CAVALHEIRO PRESTADORA DE SERVICOS LTDA ,Saída,2024-09-25,,-33834.68,438262.81900000013,Forecast
-,202409_31_GRADIL,2024,09. Setembro,IEI João Paulo II,Parcela 2/2 - Grades,Gradil,Serralheiro Cleber Silva Almeida,Saída,2024-09-25,,-2640.0,435622.81900000013,Forecast
-,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 3/3 - Reforma Telhado ,Telhado,Xame Onofre Rafael ,Saída,2024-09-30,,-29002.88,406619.93900000013,Forecast
-,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 3/3 - Mobiliário,Mobiliário,Like Móveis Planejados,Saída,2024-09-30,,-18890.66,387729.27900000016,Forecast
-,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 3/3 - Portas e Janelas,Portas e Janelas,STADULNI VIDROS AALUMINIOS E PVC,Saída,2024-09-30,,-5367.039,382362.24000000017,Forecast
-85.0,202409_49_MOBILIARIO,2024,09. Setembro,IEI TECNOBABY        ,Saldo - Mobiliário,Mobiliário,Mega Sul Distribuidora,Saída,2024-09-30,,-25457.5,356904.74000000017,Forecast
-66.0,202410_01,2024,10. Outubro,IEI Favo de Mel,Parcela 4/4 - Construtora - Mão de Obra e Materiais,Empreitada - Prestador Parceiro,SIMIÃO E CARVALHO,Saída,2024-10-01,,-85198.0,271706.74000000017,Forecast
-78.0,202410_09_CONSTRUTORA,2024,10. Outubro,IEI TECNOBABY        ,Parcela 2/2 - Construtora - Mão de Obra e Materiais,Empreitada - Prestador Próprio,D&G Eletro Soluções,Saída,2024-10-02,,-21144.22,250562.52000000016,Forecast
-67.0,202410_02,2024,10. Outubro,IEI VILA UNIÃO,Saldo 2/2  20%  - Divisórias 1º Pavimento,Divisórias,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,2024-10-09,,-4933.286,245629.23400000017,Forecast
-68.0,202410_03,2024,10. Outubro,IEI VILA UNIÃO,Saldo 2/2  20%  - Divisórias 2º Pavimento,Divisórias,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,2024-10-09,,-6192.136,239437.09800000017,Forecast
-69.0,202410_04,2024,10. Outubro,Doador 02,Entrada - Doação - Doador 02 - 3/3,Entrada,Doador 02,Entrada,2024-10-09,,333333.0,572770.0980000002,Forecast
-46.0,202409_10,2024,09. Setembro,CRECHE NOSSA SENHORA APARECIDA,Parcela 2/2 - Mobiliário,Mobiliário,D&D - Design de Interiores,Saída,2024-10-11,,-7935.0,564835.0980000002,Forecast
-70.0,202410_05,2024,10. Outubro,EEI NOSSA SENHORA DOS NAVEGANTES        ,Parcela 3/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,2024-10-12,,-37500.0,527335.0980000002,Forecast
-71.0,202410_06,2024,10. Outubro,IEI IRMÃO MÁRIO FRIGO        ,Parcela 3/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,2024-10-12,,-50000.0,477335.09800000023,Forecast
-72.0,202410_07,2024,10. Outubro,IEI SÃO VICENTE DE PAULO (CONSERVIR)      ,Parcela 3/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,2024-10-12,,-50000.0,427335.09800000023,Forecast
-73.0,202410_08,2024,10. Outubro,IEI VITÓRIA,Parcela 3/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,2024-10-12,,-27731.75,399603.34800000023,Forecast
-,202410_10_REFORMAPISO,2024,10. Outubro,EEI PIMPONETA,Saldo Reforma Piso,Mão de Obra,Gerson Resolve,Saída,2024-10-22,,-7890.0,391713.34800000023,Forecast
-82.0,202411_05_TELHADO,2024,11. Novembro,IEI TECNOBABY        ,Saldo - Reforma Telhado ,Telhado,JR Projetos e Construções,Saída,2024-11-01,,-24414.35,367298.99800000025,Forecast
-74.0,202411_01,2024,11. Novembro,EEI NOSSA SENHORA DOS NAVEGANTES        ,Parcela 4/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,2024-11-12,,-37500.0,329798.99800000025,Forecast
-75.0,202411_02,2024,11. Novembro,IEI IRMÃO MÁRIO FRIGO        ,Parcela 4/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,2024-11-12,,-50000.0,279798.99800000025,Forecast
-76.0,202411_03,2024,11. Novembro,IEI SÃO VICENTE DE PAULO (CONSERVIR)      ,Parcela 4/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,2024-11-12,,-50000.0,229798.99800000025,Forecast
-77.0,202411_04,2024,11. Novembro,IEI VITÓRIA,Parcela 4/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,2024-11-12,,-27731.75,202067.24800000025,Forecast
+37.0,202409_01_MOBILIARIO,2024,09. Setembro,EEI Estrelinha do Céu,2/2 - Mobiliário,Mobiliário,Divimobile Mobiliário Corporativo Eirele.,Saída,2024-09-06,,-1048.56,823183.0260000001,Pago
+38.0,202409_02_COBERTURA_PLAYGROUND,2024,09. Setembro,IEI MUNDO COLORIDO        ,2/2 - Cobertura do Playground,Playground,DARCI ANTUNES DA SILVEIRA – MD REFORMAS E CONSTRUÇÃO,Saída,2024-09-06,,-7500.0,815683.0260000001,Pago
+39.0,202409_03_PISO,2024,09. Setembro,IEI MUNDO COLORIDO        ,Parcela 2/2 - Pintura Externa e Piso Vinílico,Empreitada - Prestador Próprio,PAULO RENATO DE OLIVEIRA CAMPOS-REFORMAS E MANUTENÇÃO,Saída,2024-09-06,,-46141.2,769541.8260000001,Pago
+40.0,202409_04_MOBILIARIO,2024,09. Setembro,IEI MUNDO COLORIDO        ,Parcela 2/3 - Mobiliário Cozinha e Salas de Aula,Mobiliário,VIEIRA & CAVALHEIRO PRESTADORA DE SERVICOS LTDA ,Saída,2024-09-06,,-33834.68,735707.1460000001,Pago
+34.0,202408_28_PINTURA,2024,09. Setembro,IEI VILA UNIÃO,Saldo 1/2  20%  - Pintura 1º Pavimento,Pintura,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,2024-09-06,,-7804.162,727902.984,Pago
+42.0,202409_06,2024,09. Setembro,Doador 01,Entrada - Doação - Doador 01 - 2/2,Entrada,Doador 01,Entrada,2024-09-06,,150000.0,877902.984,Pago
+,202409_77_FUNILARIA,2024,09. Setembro,IEI Favo de Mel,Parcela 1/2 - Funilaria,Funilaria,Funilaria Nery,Saída,2024-09-06,,-2800.0,875102.984,Pago
+43.0,202409_07_DIVISORIAS,2024,09. Setembro,IEI VILA UNIÃO,Entrada 60% - Divisórias 1º Pavimento,Divisórias,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,2024-09-09,,-14799.858,860303.126,Pago
+44.0,202409_08_DIVISORIAS,2024,09. Setembro,IEI VILA UNIÃO,Entrada 60% - Divisórias 2º Pavimento,Divisórias,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,2024-09-09,,-18576.408,841726.718,Pago
+45.0,202409_09,2024,09. Setembro,Doador 02,Entrada - Doação - Doador 02 - 2/3,Entrada,Doador 02,Entrada,2024-09-09,,333333.0,1175059.7179999999,Pago
+41.0,202409_05,2024,09. Setembro,Doador 04,Entrada - Doação - Doador 04 - 1/1,Entrada,Doador 04,Entrada,2024-09-10,,350000.0,1525059.7179999999,Forecast
+49.0,202409_13,2024,09. Setembro,IEI Favo de Mel,Parcela 2/4 - Construtora - Mão de Obra e Materiais,Empreitada - Prestador Parceiro,SIMIÃO E CARVALHO,Saída,2024-09-10,,-85198.0,1439861.7179999999,Forecast
+50.0,202409_14,2024,09. Setembro,EEI Estrelinha do Céu,2/2 - Mobiliário,Mobiliário,Representação Fagundes,Saída,2024-09-10,,-14950.0,1424911.7179999999,Forecast
+51.0,202409_15_PINTURA,2024,09. Setembro,POPULAR NOVA GERAÇÃO,Parcela 2/2 - Pintura ,Pintura,Empreiteira Martini,Saída,2024-09-10,,-15225.0,1409686.7179999999,Forecast
+,202409_64_PINTURA,2024,09. Setembro,ECEI Brincando e Aprendendo ,Parcela 2/2 - Piso e Pintura,Pintura,Rodrigo Borges ME,Saída,2024-09-11,,-4642.0,1405044.7179999999,Forecast
+,202409_66_LIXEIRAS,2024,09. Setembro,ECEI Brincando e Aprendendo ,Parcela 2/2 - Lixeiras,Mobiliário,AZ Livros e Brinquedos,Saída,2024-09-11,,-3040.0,1402004.7179999999,Forecast
+,202409_68_MOBILIARIO,2024,09. Setembro,ECEI Brincando e Aprendendo ,Parcela 2/2 - Mobiliário,Mobiliário,Rodrigo Borges ME,Saída,2024-09-11,,-4280.0,1397724.7179999999,Forecast
+53.0,202409_17,2024,09. Setembro,IEI Anjo das Flores,2/2 - Mobiliário,Mobiliário,Representação Fagundes,Saída,2024-09-12,,-31412.5,1366312.2179999999,Forecast
+54.0,202409_18,2024,09. Setembro,EEI NOSSA SENHORA DOS NAVEGANTES        ,Parcela 2/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,2024-09-12,,-37500.0,1328812.2179999999,Forecast
+55.0,202409_19,2024,09. Setembro,IEI IRMÃO MÁRIO FRIGO        ,Parcela 2/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,2024-09-12,,-50000.0,1278812.2179999999,Forecast
+56.0,202409_20,2024,09. Setembro,IEI SÃO VICENTE DE PAULO (CONSERVIR)      ,Parcela 2/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,2024-09-12,,-50000.0,1228812.2179999999,Forecast
+57.0,202409_21,2024,09. Setembro,IEI VITÓRIA,Parcela 2/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,2024-09-12,,-27731.75,1201080.4679999999,Forecast
+,202409_62_MOBILIARIO,2024,09. Setembro,ECEI Brincando e Aprendendo ,Parcela 2/2 - Mobiliário,Mobiliário,AZ Livros e Brinquedos,Saída,2024-09-12,,-14835.0,1186245.4679999999,Forecast
+,202409_76_ARCONDICIONADO,2024,09. Setembro,ECEI Brincando e Aprendendo ,Parcela 2/2 - MANUTENÇÃO AR CONDICIONADO,Ar-Condicionado,CLIMA HEAT,Saída,2024-09-12,,-4530.0,1181715.4679999999,Forecast
+,,2024,08. Agosto,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 1/2 - Laudo Estrutural,Laudo Técnico,VIEIRA & CAVALHEIRO PRESTADORA DE SERVICOS LTDA ,Saída,2024-09-15,,-3689.0,1178026.4679999999,Forecast
+,,2024,08. Agosto,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 1/3 - Gradil de Concreto,Gradil,Vector Insdústria e Comércio de Pré Fabricados de Concretos,Saída,2024-09-15,,-10912.0,1167114.4679999999,Forecast
+,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 1/3 - Pintura,Pintura,Xame Onofre Rafael ,Saída,2024-09-15,,-26949.41,1140165.058,Forecast
+,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 1/3 - Reforma Telhado,Telhado,Xame Onofre Rafael ,Saída,2024-09-15,,-29002.88,1111162.178,Forecast
+,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 1/3 - Serviços Elétricos,Serviços Elétricos,Rogério da Silva Markunas,Saída,2024-09-15,,-3486.54,1107675.638,Forecast
+,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 1/2 - Mobiliário,Mobiliário,JBM Soluções em Móveis,Saída,2024-09-15,,-15803.1,1091872.538,Forecast
+,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Pagamento Tintas,Tintas,Amauri Tintas,Saída,2024-09-15,,-6349.5,1085523.038,Forecast
+,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 1/3 - Madereira,Material de Construção,Redemac AJ Reis,Saída,2024-09-15,,-6900.26,1078622.778,Forecast
+,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 1/2 - Material Elétrico,Material de Construção,Plenobras Elétricos e Hidráulicos,Saída,2024-09-15,,-3618.06,1075004.7179999999,Forecast
+,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 1/3 - Portas e Janelas,Portas e Janelas,STADULNI VIDROS AALUMINIOS E PVC,Saída,2024-09-15,,-7156.052,1067848.666,Forecast
+22.0,202409_42_CONSTRUTORA,2024,09. Setembro,IEI TECNOBABY        ,Parcela 1/2 - Construtora - Mão de Obra e Materiais,Empreitada - Prestador Próprio,D&G Eletro Soluções,Saída,2024-09-15,,-21144.22,1046704.446,Forecast
+79.0,202409_43_ELETROS,2024,09. Setembro,IEI TECNOBABY        ,Entrada Eletrodomésticos,Eletrodomésticos ,Mega Sul Distribuidora,Saída,2024-09-15,,-37308.39,1009396.056,Forecast
+81.0,202409_44_TELHADO,2024,09. Setembro,IEI TECNOBABY        ,Entrada - Reforma Telhado,Telhado,JR Projetos e Construções,Saída,2024-09-15,,-24414.35,984981.706,Forecast
+83.0,202409_45_UTENSILIOS,2024,09. Setembro,IEI TECNOBABY        ,Entrada - Utensílios,Utensílios,Mega Sul Distribuidora,Saída,2024-09-15,,-5378.13,979603.576,Forecast
+85.0,202409_46_MOBILIARIO,2024,09. Setembro,IEI TECNOBABY        ,Entrada - Mobiliário,Mobiliário,Mega Sul Distribuidora,Saída,2024-09-15,,-25457.5,954146.076,Forecast
+,202409_30_GRADIL,2024,09. Setembro,IEI João Paulo II,Parcela 1/2 - Grades,Gradil,Serralheiro Cleber Silva Almeida,Saída,2024-09-15,,-2640.0,951506.076,Forecast
+,202409_32_PISO,2024,09. Setembro,IEI João Paulo II,Parcela 1/2 - Instalação Piso Vinilico,Piso,Mutte Instalação de Pisos Vinilicos,Saída,2024-09-15,,-5550.0,945956.076,Forecast
+,202409_34_PISO,2024,09. Setembro,IEI João Paulo II,Parcela 1/2 -  Piso Vinilico,Piso,CASA DO PARQUET,Saída,2024-09-15,,-25288.0,920668.076,Forecast
+,202409_36_PINTURAMURO,2024,09. Setembro,IEI João Paulo II,Parcela 1/2 -  Pintura Muro,Pintura,José Kunkel,Saída,2024-09-15,,-6250.0,914418.076,Forecast
+,202409_38_ARCONDICIOANDO,2024,09. Setembro,IEI João Paulo II,Parcela 1/2 -  Ar-Condicionado,Ar-Condicionado,Frigelar Comercio e industria LTDA,Saída,2024-09-15,,-13193.0,901225.076,Forecast
+,202409_40_ARCONDICIOANDO,2024,09. Setembro,IEI João Paulo II,Parcela 1/2 -  Ar-Condicionado Instalação,Ar-Condicionado,Ear Engenharia Termica,Saída,2024-09-15,,-4097.0,897128.076,Forecast
+58.0,202409_22,2024,09. Setembro,IEI VILA UNIÃO,Saldo 2/2  20%  - Pintura 1º Pavimento,Pintura,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,2024-09-15,,-7804.162,889323.914,Forecast
+59.0,202409_23,2024,09. Setembro,IEI VILA UNIÃO,Saldo 2/2  20%  - Pintura Refeitório e Salas,Pintura,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,2024-09-15,,-7779.414000000001,881544.5,Forecast
+,202409_37_PINTURAMURO,2024,09. Setembro,IEI João Paulo II,Parcela 2/2 - Pintura Muro,Pintura,José Kunkel,Saída,2024-09-15,,-6250.0,875294.5,Forecast
+33.0,202408_27_MAO_DE_OBRA,2024,08. Agosto,EEI Estrelinha do Céu,Parcela 2/2 - Mão de Obra,Mão de Obra,Julio Cesar da Silva Machado,Saída,2024-09-16,,-8100.0,867194.5,Forecast
+60.0,202409_24,2024,09. Setembro,IEI MUNDO COLORIDO        ,Parcela 2/2 - Playgroung,Playground,VERONA INDUSTRIA DE PLÁSTICOS LTDA,Saída,2024-09-16,,-4999.5,862195.0,Forecast
+,202409_33_PISO,2024,09. Setembro,IEI João Paulo II,Parcela 2/2 - Instalação Piso Vinilico,Piso,Mutte Instalação de Pisos Vinilicos,Saída,2024-09-17,,-5550.0,856645.0,Forecast
+,202409_35_PISO,2024,09. Setembro,IEI João Paulo II,Parcela 2/2 - Piso Vinilico,Piso,CASA DO PARQUET,Saída,2024-09-17,,-25288.0,831357.0,Forecast
+,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 2/2 - Laudo Estrutural,Laudo Técnico,VIEIRA & CAVALHEIRO PRESTADORA DE SERVICOS LTDA ,Saída,2024-09-18,,-3689.0,827668.0,Forecast
+,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 2/3 - Gradil de Concreto,Gradil,Vector Insdústria e Comércio de Pré Fabricados de Concretos,Saída,2024-09-18,,-10912.0,816756.0,Forecast
+61.0,202409_25_MOBILIARIO,2024,09. Setembro,CRECHE NOSSA SENHORA APARECIDA,Parcela 2/2 - Mobiliário,Mobiliário,MAURICIO THOME HINTERHOLZ ME,Saída,2024-09-20,,-11532.3,805223.7,Forecast
+,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 3/3 - Pintura,Pintura,Xame Onofre Rafael ,Saída,2024-09-20,,-26949.41,778274.2899999999,Forecast
+,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 3/3 - Madereira,Material de Construção,Redemac AJ Reis,Saída,2024-09-20,,-6900.26,771374.0299999999,Forecast
+,202409_78_FUNILARIA,2024,09. Setembro,IEI Favo de Mel,Parcela 2/2 - Funilaria,Funilaria,Funilaria Nery,Saída,2024-09-20,-2800,-2800.0,768574.0299999999,Forecast
+,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 3/3 - Gradil de Concreto,Gradil,Vector Insdústria e Comércio de Pré Fabricados de Concretos,Saída,2024-09-22,,-10912.0,757662.0299999999,Forecast
+62.0,202409_26,2024,09. Setembro,IEI Favo de Mel,Parcela 3/4 - Construtora - Mão de Obra e Materiais,Empreitada - Prestador Parceiro,SIMIÃO E CARVALHO,Saída,2024-09-23,,-85198.0,672464.0299999999,Forecast
+,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 2/2 - Mobiliário,Mobiliário,JBM Soluções em Móveis,Saída,2024-09-23,,-15803.1,656660.9299999999,Forecast
+,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 2/2 - Material Elétrico,Material de Construção,Plenobras Elétricos e Hidráulicos,Saída,2024-09-23,,-3618.06,653042.8699999999,Forecast
+,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 2/3 - Portas e Janelas,Portas e Janelas,STADULNI VIDROS AALUMINIOS E PVC,Saída,2024-09-23,,-5367.039,647675.8309999999,Forecast
+63.0,202409_27,2024,09. Setembro,IEI VILA UNIÃO,Saldo 1/2  20%  - Divisórias 1º Pavimento,Divisórias,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,2024-09-24,,-4933.286,642742.5449999999,Forecast
+64.0,202409_28,2024,09. Setembro,IEI VILA UNIÃO,Saldo 1/2  20%  - Divisórias 2º Pavimento,Divisórias,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,2024-09-24,,-6192.136,636550.4089999999,Forecast
+65.0,202409_29_MOBILIARIO,2024,09. Setembro,IEI MUNDO COLORIDO        ,Parcela 3/3 - Mobiliário Cozinha e Salas de Aula,Mobiliário,VIEIRA & CAVALHEIRO PRESTADORA DE SERVICOS LTDA ,Saída,2024-09-25,,-33834.68,602715.7289999998,Forecast
+,202409_31_GRADIL,2024,09. Setembro,IEI João Paulo II,Parcela 2/2 - Grades,Gradil,Serralheiro Cleber Silva Almeida,Saída,2024-09-25,,-2640.0,600075.7289999998,Forecast
+,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 1/3 - Mobiliário,Mobiliário,Like Móveis Planejados,Saída,2024-09-29,,-18890.66,581185.0689999998,Forecast
+,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Pagamento Limpeza Coifa,Limpeza,VIEIRA & CAVALHEIRO PRESTADORA DE SERVICOS LTDA ,Saída,2024-09-29,,-700.0,580485.0689999998,Forecast
+,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Pagamento Limpeza Caixa D'agua,Limpeza,Dedetiza,Saída,2024-09-29,,-420.0,580065.0689999998,Forecast
+,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Pagamento Desinsetização,Limpeza,Dedetiza,Saída,2024-09-29,,-790.0,579275.0689999998,Forecast
+,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Pagamento Vidros,Vidros,Vidraçaria Dinamarca,Saída,2024-09-29,,-580.0,578695.0689999998,Forecast
+,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 2/3 - Pintura,Pintura,Xame Onofre Rafael ,Saída,2024-09-29,,-26949.41,551745.6589999998,Forecast
+,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 2/3 - Reforma Telhado ,Telhado,Xame Onofre Rafael ,Saída,2024-09-29,,-29002.88,522742.77899999975,Forecast
+,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 2/3 - Serviços Elétricos,Serviços Elétricos,Rogério da Silva Markunas,Saída,2024-09-29,,-3486.54,519256.23899999977,Forecast
+,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 2/3 - Mobiliário,Mobiliário,Like Móveis Planejados,Saída,2024-09-29,,-18890.66,500365.5789999998,Forecast
+,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 2/3 - Madereira,Material de Construção,Redemac AJ Reis,Saída,2024-09-29,,-6900.26,493465.3189999998,Forecast
+,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 3/3 - Serviços Elétricos,Serviços Elétricos,Rogério da Silva Markunas,Saída,2024-09-29,,-3486.54,489978.7789999998,Forecast
+,202409_39_ARCONDICIOANDO,2024,09. Setembro,IEI João Paulo II,Parcela 2/2 - Ar-Condicionado,Ar-Condicionado,Frigelar Comercio e industria LTDA,Saída,2024-09-29,,-13193.0,476785.7789999998,Forecast
+,202409_41_ARCONDICIOANDO,2024,09. Setembro,IEI João Paulo II,Parcela 2/2 - Ar-Condicionado Instalação,Ar-Condicionado,Ear Engenharia Termica,Saída,2024-09-29,,-4097.0,472688.7789999998,Forecast
+,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 3/3 - Reforma Telhado ,Telhado,Xame Onofre Rafael ,Saída,2024-09-30,,-29002.88,443685.8989999998,Forecast
+,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 3/3 - Mobiliário,Mobiliário,Like Móveis Planejados,Saída,2024-09-30,,-18890.66,424795.2389999998,Forecast
+,,2024,09. Setembro,EEI ABRASCE LOTEAMENTO PAMPA,Parcela 3/3 - Portas e Janelas,Portas e Janelas,STADULNI VIDROS AALUMINIOS E PVC,Saída,2024-09-30,,-5367.039,419428.19999999984,Forecast
+66.0,202410_01,2024,10. Outubro,IEI Favo de Mel,Parcela 4/4 - Construtora - Mão de Obra e Materiais,Empreitada - Prestador Parceiro,SIMIÃO E CARVALHO,Saída,2024-10-01,,-85198.0,334230.19999999984,Forecast
+80.0,202409_47_ELETRODOMESTICOS,2024,09. Setembro,IEI TECNOBABY        ,Saldo Eletrodomésticos ,Eletrodomésticos ,Mega Sul Distribuidora,Saída,2024-10-05,,-37308.39,296921.8099999998,Forecast
+84.0,202409_48_UTENSILIOS,2024,09. Setembro,IEI TECNOBABY        ,Saldo - Utensílios,Utensílios,Mega Sul Distribuidora,Saída,2024-10-05,,-5378.13,291543.6799999998,Forecast
+67.0,202410_02,2024,10. Outubro,IEI VILA UNIÃO,Saldo 2/2  20%  - Divisórias 1º Pavimento,Divisórias,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,2024-10-09,,-4933.286,286610.3939999998,Forecast
+68.0,202410_03,2024,10. Outubro,IEI VILA UNIÃO,Saldo 2/2  20%  - Divisórias 2º Pavimento,Divisórias,VIEIRA &CAVALHEIRO PRESTADORA ED SERVICOS LTDA,Saída,2024-10-09,,-6192.136,280418.2579999998,Forecast
+69.0,202410_04,2024,10. Outubro,Doador 02,Entrada - Doação - Doador 02 - 3/3,Entrada,Doador 02,Entrada,2024-10-09,,333333.0,613751.2579999998,Forecast
+46.0,202409_10,2024,09. Setembro,CRECHE NOSSA SENHORA APARECIDA,Parcela 2/2 - Mobiliário,Mobiliário,D&D - Design de Interiores,Saída,2024-10-11,,-7935.0,605816.2579999998,Forecast
+70.0,202410_05,2024,10. Outubro,EEI NOSSA SENHORA DOS NAVEGANTES        ,Parcela 3/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,2024-10-12,,-37500.0,568316.2579999998,Forecast
+71.0,202410_06,2024,10. Outubro,IEI IRMÃO MÁRIO FRIGO        ,Parcela 3/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,2024-10-12,,-50000.0,518316.2579999998,Forecast
+72.0,202410_07,2024,10. Outubro,IEI SÃO VICENTE DE PAULO (CONSERVIR)      ,Parcela 3/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,2024-10-12,,-50000.0,468316.2579999998,Forecast
+73.0,202410_08,2024,10. Outubro,IEI VITÓRIA,Parcela 3/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,2024-10-12,,-27731.75,440584.5079999998,Forecast
+85.0,202409_49_MOBILIARIO,2024,09. Setembro,IEI TECNOBABY        ,Saldo - Mobiliário,Mobiliário,Mega Sul Distribuidora,Saída,2024-10-15,,-25457.5,415127.0079999998,Forecast
+78.0,202410_09_CONSTRUTORA,2024,10. Outubro,IEI TECNOBABY        ,Parcela 2/2 - Construtora - Mão de Obra e Materiais,Empreitada - Prestador Próprio,D&G Eletro Soluções,Saída,2024-10-15,,-21144.22,393982.7879999998,Forecast
+,202410_10_REFORMAPISO,2024,10. Outubro,EEI PIMPONETA,Saldo Reforma Piso,Mão de Obra,Gerson Resolve,Saída,2024-10-22,,-7890.0,386092.7879999998,Forecast
+74.0,202411_01,2024,11. Novembro,EEI NOSSA SENHORA DOS NAVEGANTES        ,Parcela 4/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,2024-11-12,,-37500.0,348592.7879999998,Forecast
+75.0,202411_02,2024,11. Novembro,IEI IRMÃO MÁRIO FRIGO        ,Parcela 4/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,2024-11-12,,-50000.0,298592.7879999998,Forecast
+76.0,202411_03,2024,11. Novembro,IEI SÃO VICENTE DE PAULO (CONSERVIR)      ,Parcela 4/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,2024-11-12,,-50000.0,248592.78799999983,Forecast
+77.0,202411_04,2024,11. Novembro,IEI VITÓRIA,Parcela 4/4 - Arquitetos Voluntários,Doação Direta,Associação Arquitetos Voluntários,Saída,2024-11-12,,-27731.75,220861.03799999983,Forecast
+82.0,202411_05_TELHADO,2024,11. Novembro,IEI TECNOBABY        ,Saldo - Reforma Telhado ,Telhado,JR Projetos e Construções,Saída,2024-11-15,,-24414.35,196446.68799999982,Forecast
