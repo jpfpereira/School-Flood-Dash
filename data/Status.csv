@@ -1,23 +1,25 @@
-Tipo,Saída,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Tipo.1,(Vários itens)
+Tipo,Entrada,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Tipo.1,(Vários itens)
 ,,,,,,,,MÊS,10. Outubro
 Soma de VALOR,Rótulos de Coluna,,,,,,,,
-Rótulos de Linha,Forecast,Pago,Total Geral,,,,,Rótulos de Linha,Soma de VALOR
-08. Agosto,,-390326.11500000005,-390326.11500000005,,,,,Ar-Condicionado,-27675.66
-09. Setembro,-296921.252,-1214452.503,-1511373.755,,,,,Bibliotecas,-153000
-10. Outubro,-884797.4319999999,,-884797.4319999999,,,,,Divisórias,-11125.422
-11. Novembro,-189646.1,,-189646.1,,,,,Doação Direta,-165231.75
-12. Dezembro,-49230,,-49230,,,,,Eletrodomésticos ,-65247
-Total Geral,-1420594.784,-1604778.618,-3025373.402,,,,,Empreitada - Prestador Parceiro,-92974
-,,,,,,,,Empreitada - Prestador Próprio,-21144.22
+Rótulos de Linha,Pago,Paid,Total Geral,,,,,Rótulos de Linha,Soma de VALOR
+08. Agosto,1483333.33,,1483333.33,,,,,Ar-Condicionado,-35986.31
+09. Setembro,1133333,,1133333,,,,,Divisórias,-22250.844
+10. Outubro,,62335,62335,,,,,Doação Direta,-165231.75
+Total Geral,2616666.33,62335,2679001.33,,,,,Eletrodomésticos ,-93481
+,,,,,,,,Empreitada - Prestador Parceiro,-92974
+,,,,,,,,Empreitada - Prestador Próprio,-42288.44
 ,,,,,,,,Evento,-50000
-,,,,,,,,Forro,-3565
+,,,,,,,,Forro,-7130
+,,,,,,,,Funilaria,-2800
+,,,,,,,,Gradil,-2640
 ,,,,,,,,Informática,-12209
-,,,,,,,,Mão de Obra,-29911
+,,,,,,,,Mão de Obra,-61947
 ,,,,,,,,Material Pedagógico,-12145
-,,,,,,,,Mobiliário,-80474
-,,,,,,,,Pintura,-16500
-,,,,,,,,Piso,-24019
-,,,,,,,,Portas e Janelas,-21310
-,,,,,,,,Utensílios,-86903.38
-,,,,,,,,Vegetação,-11363
-,,,,,,,,Total Geral,-884797.432
+,,,,,,,,Mobiliário,-151297.98
+,,,,,,,,Pintura,-45500
+,,,,,,,,Piso,-68327
+,,,,,,,,Playground,-4999.5
+,,,,,,,,Portas e Janelas,-42620
+,,,,,,,,Utensílios,-92281.51
+,,,,,,,,Vegetação,-22726
+,,,,,,,,Total Geral,-1028835.334
